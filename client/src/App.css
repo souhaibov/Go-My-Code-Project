@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+button{
+  border: none;
+}
+.App {
+
+  text-align: center;
+}
+.container{
+  min-height:calc(100vh - 60px);
+}
+.App{
+  /* background-color: rgb(228, 193, 232); */
+   background-image: url("https://img.freepik.com/photos-gratuite/main-homme-jouant-aux-echecs-pour-planification-entreprise-comparaison-metaphore-mise-au-point-selective_1150-19606.jpg?w=2000"); 
+  
+  background-size: auto; 
+}
+h1{
+  font-size: 60px;
+  text-shadow:#72d106 0 -1px 0,
+#025a14 1px 1px 0,
+#0c5703 2px 2px 0,
+#131212 3px 3px 0,
+#9b0102 4px 4px 0,
+#541402 5px 5px 0,
+#333 5px 5px 10px;
+color:#d1d3d2;
+
+}
+.home img{
+  width: 30vw;
+  height: 60vh;
+
+}
+.home{
+  width: 100%;
+  height: 150vh;
+}
+

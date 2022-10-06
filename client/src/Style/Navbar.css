@@ -1,0 +1,64 @@
+.Navigation{
+    
+    width: 100%;
+    background-color: rgb(3, 105, 76);
+}
+.navigation-ul{
+    
+    margin-top: 0%;
+    padding-top: 0%;
+   
+    list-style: none;
+   margin-inline: auto;
+   
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Navigation a {
+    color: rgb(255, 255, 255);
+    font: bold;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+}
+.Navigation img{
+  justify-content: center;
+  justify-items: center;
+    width: 5vw;
+    height: 10vh;
+}
+.under-list{
+    position: absolute;
+    display: none;
+    background-color: rgb(3, 105, 76);
+    list-style: none;
+    left: -10px;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 30px 20px 0 10px;
+    width: 13vw;
+   
+}
+.under-list li{
+    padding-bottom: 30px;
+}
+
+/* afficher underlist when we hover the li */
+.Navigation a:hover .under-list{
+    display: flex;
+}
+ .login{
+    width: 100px;
+    height: 100px;
+} 
+.botton_login{
+    margin-left: 10px;
+  width:80px ;
+  height:40px ;
+  font-size: 18px;
+  background-color: rgb(80, 179, 146);
+  border-radius: 50px ;
+  cursor: pointer;
+}
