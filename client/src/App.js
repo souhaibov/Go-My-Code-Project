@@ -42,9 +42,6 @@ function App() {
           <Route path="/Events" element={<Events />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/About" element={<About />} />
-          <Route element={<PrivateRoute/>}>
-            <Route path="/Dashboard" element={<Dashboard />} />
-          </Route>
           
           <Route
             path="/Students"
@@ -64,6 +61,11 @@ function App() {
             path="/Managing"
             element={<Managing DataManage={DataManage} />}
           />
+
+           <Route element={<PrivateRoute/>}>
+            <Route path="/Dashboard" element={<Dashboard />} />
+           </Route>
+
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>

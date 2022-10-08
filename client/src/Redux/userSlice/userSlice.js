@@ -12,10 +12,11 @@ export const userRegister = createAsyncThunk("user/register",async (user) => {
     }
 });
 // login connection
-export const userLogin = createAsyncThunk("user/login",async (user) => {
+export const userLogin  = createAsyncThunk("user/login",async (user) => {
     try {
         let response = await axios.post("http://localhost:5000/user/login", user);
     return await response;
+    
     
     } catch (error) {
         console.log(error)
