@@ -7,6 +7,10 @@ phone_number:{type:Number ,required:true},
 email:{type:String ,required:true},
 password:{type:String ,required:true},
 isAdmin:{type:Boolean ,default:false},
+Age:{type:Number },
+Poster:{type:String },
+Status:{type:String },
+Description:{type:String },
 })
 
 module.exports=mongoose.model('User', UserSchema)

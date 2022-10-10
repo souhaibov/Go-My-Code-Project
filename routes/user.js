@@ -73,6 +73,7 @@ const token = await jwt.sign(payload, process.env.SecretOrKey, {
     expiresIn: 3600
 })
 console.log(token)
+
     // send the user
     res.status(200).send({user: searchedUser, msg: "success", token:`Bearer ${token}`});
 
@@ -81,6 +82,38 @@ console.log(token)
 }
 })
 
+// GET :  RETURN ALL users "http://localhost:5000/user/"
+
+router.get("/", async (req, res) => {
+    try {
+      const result = await User.find();
+      res.send(result);
+    } catch (error) {
+      console.log("can't find the user");
+    }
+  });
+
+// PUT : EDIT A user BY ID
+  
+  router.put("/update/:id", async (req, res) => {
+    try {
+      const result = await User.findByIdAndUpdate({_id: req.params.id},{$set:req.body},{new:true});
+      res.send({User:result, msg:"users updated"});
+    } catch (error) {
+      console.log("can't update users");
+    }
+  });
+
+   //  DELETE : REMOVE AN Event BY ID "http://localhost:5000/user/delete/"
+  
+  router.delete("/delete/:id", async (req, res) => {
+    try {
+      const result = await User.findByIdAndRemove({_id: req.params.id});
+      res.send({User:result, msg:"users deleted"});
+    } catch (error) {
+      console.log("can't delete users");
+    }
+  });
 
 // Current user
 router.get('/current',isAuth(), (req, res) => {

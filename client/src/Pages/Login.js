@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import "../Style/Login.css"
-import {Link} from 'react-router-dom'
+import {Link , useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import { userLogin } from '../Redux/userSlice/userSlice'
 
 const Login = () => {
+let navigate = useNavigate();
+
   const [login, setlogin] = useState({
     email: '',
     password: '', 
@@ -27,6 +29,8 @@ const dispatch = useDispatch();
        <br/><br/>
       <button className="submit_signin" onClick={()=>{
         dispatch(userLogin(login));
+        setTimeout(()=>{navigate("/Dashboard")},1000);
+        // window.location.reload();
       }} >Login</button>
       <br/><br/>
       <Link to ='/Register'> <button className="submit_signup" >Register</button></Link> 

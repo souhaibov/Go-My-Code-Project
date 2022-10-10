@@ -8,7 +8,7 @@ const Eventsroute = express.Router()
 Eventsroute.get("/", async (req, res) => {
     try {
       const result = await Events.find();
-      res.send(result);
+      res.send({event:result});
     } catch (error) {
       console.log("can't find Events");
     }

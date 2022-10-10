@@ -24,7 +24,7 @@ const Navbar = () => {
 
             {/* <Link to='/ContactUs'><li>Contact us</li></Link> */}
             {isAuth ?
-             <button onClick={()=>{
+             <button className='botton_login' onClick={()=>{
               localStorage.removeItem('token')
               window.location.reload()}}>Logout</button> : <div>
             <Link to='/Login'><button className='botton_login'><b>Login </b></button></Link> 

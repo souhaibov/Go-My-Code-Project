@@ -38,6 +38,7 @@ export const userCurrent = createAsyncThunk("user/current",async () => {
 });
 
 
+
 const initialState = {
  user:null,
  status:null

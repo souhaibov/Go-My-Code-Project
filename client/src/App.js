@@ -20,6 +20,7 @@ import {useDispatch} from "react-redux";
 import { userCurrent } from "./Redux/userSlice/userSlice";
 import Dashboard from "./Pages/Dashboard";
 import PrivateRoute from "./route/PrivateRoute";
+import M_event from "./Pages/dashboard/M_event";
 
 function App() {
   const dispatch = useDispatch();
@@ -63,7 +64,9 @@ function App() {
           />
 
            <Route element={<PrivateRoute/>}>
-            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/Dashboard" element={<Dashboard />}>
+                 <Route path="/Dashboard/Event" element={<M_event/>} />
+            </Route>
            </Route>
 
           <Route path="/Login" element={<Login />} />
