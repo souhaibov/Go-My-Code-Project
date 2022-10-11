@@ -1,7 +1,8 @@
 import { createSlice,createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-// register connection 
+             // register connection - Add new user -
+             
 export const userRegister = createAsyncThunk("user/register",async (user) => {
     try {
         let response = await axios.post("http://localhost:5000/user/register", user);
@@ -11,7 +12,9 @@ export const userRegister = createAsyncThunk("user/register",async (user) => {
         console.log(error)
     }
 });
-// login connection
+
+                      // login connection
+
 export const userLogin  = createAsyncThunk("user/login",async (user) => {
     try {
         let response = await axios.post("http://localhost:5000/user/login", user);
@@ -22,7 +25,20 @@ export const userLogin  = createAsyncThunk("user/login",async (user) => {
         console.log(error)
     }
 });
+
+// get all users
+
+export const getUser = createAsyncThunk("User/", async () => {
+    try {
+      let response = await axios.get("http://localhost:5000/user/");
+      return await response;
+    } catch (error) {
+      console.log(error);
+    }
+  });
+
 // current user
+
 export const userCurrent = createAsyncThunk("user/current",async () => {
     try {
         let response = await axios.get("http://localhost:5000/user/current",{
@@ -37,7 +53,27 @@ export const userCurrent = createAsyncThunk("user/current",async () => {
     }
 });
 
+// update a User
 
+export const updateUser = createAsyncThunk("User/", async (id) => {
+    try {
+      let response = await axios.put(`http://localhost:5000/user/update/${id}`);
+      return await response;
+    } catch (error) {
+      console.log(error);
+    }
+  });
+  
+  // delete an User
+  
+  export const deleteUser = createAsyncThunk("User/", async (id) => {
+    try {
+      let response = await axios.get(`http://localhost:5000/user/delete/${id}`);
+      return await response;
+    } catch (error) {
+      console.log(error);
+    }
+  });
 
 const initialState = {
  user:null,
@@ -49,6 +85,9 @@ export const userSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers:{
+
+                  // add a new user extrareducers
+
     [userRegister.pending]: (state)=> {
         state.status = "pending";
     },
@@ -60,6 +99,8 @@ export const userSlice = createSlice({
     [userRegister.rejected]: (state)=> {
         state.status = "failed";
     },
+
+                 // login a user extrareducers
     
     [userLogin.pending]: (state)=> {
         state.status = "pending";
@@ -72,6 +113,9 @@ export const userSlice = createSlice({
     [userLogin.rejected]: (state)=> {
         state.status = "failed";
     },
+
+                // current user extrareducers
+
     [userCurrent.pending]: (state)=> {
         state.status = "pending";
     },
@@ -82,6 +126,43 @@ export const userSlice = createSlice({
     [userCurrent.rejected]: (state)=> {
         state.status = "failed";
     },
+
+             // get user extrareducers
+    
+    [getUser.pending]: (state) => {
+        state.status = "pending";
+      },
+      [getUser.fulfilled]: (state, action) => {
+        state.status = "successful";
+        state.User = action.payload.data.User;
+      },
+      [getUser.rejected]: (state) => {
+        state.status = "failed";
+      },
+  
+      // update extrareducers
+  
+      [updateUser.pending]: (state) => {
+        state.status = "pending";
+      },
+      [updateUser.fulfilled]: (state, action) => {
+        state.status = "successful";
+      },
+      [updateUser.rejected]: (state) => {
+        state.status = "failed";
+      },
+  
+      // delete extrareducers
+  
+      [deleteUser.pending]: (state) => {
+        state.status = "pending";
+      },
+      [deleteUser.fulfilled]: (state, action) => {
+        state.status = "successful";
+      },
+      [deleteUser.rejected]: (state) => {
+        state.status = "failed";
+      },
   },
   
 })

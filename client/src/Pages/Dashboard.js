@@ -13,19 +13,21 @@ const Dashboard = () => {
           <br />
           <ul className="management_list">
 
-            <Link to=""> <li> ♔ 𝓐𝓭𝓶𝓲𝓷 ♔</li> <br /> </Link> 
-            <Link to=""><li> ♛ 𝓒𝓸𝓪𝓬𝓱𝓼 ♛</li> <br /></Link>
-            <Link to=""><li> ♕ 𝓜𝓪𝓷𝓪𝓰𝓲𝓷𝓰 𝓑𝓸𝓭𝔂 ♕</li> <br /></Link>
-            <Link to=""><li> ♘ 𝓐𝓬𝓽𝓲𝓿𝓲𝓽𝓲𝓮𝓼 ♘</li> <br /></Link>
-            <Link to="/dashboard/M_event"><li> ♝ 𝓔𝓿𝓮𝓷𝓽 ♝</li> <br /></Link>
-            <Link to=""><li> ♙ 𝓢𝓽𝓾𝓭𝓮𝓷𝓽𝓼 ♙</li> <br /></Link>
+            <Link to="/dashboard/M_user"> <li> ♔ 𝓤𝓼𝓮𝓻 ♔</li> <br /> </Link> 
+            <Link to="/dashboard/M_activity"><li> ♕ 𝓐𝓬𝓽𝓲𝓿𝓲𝓽𝓲𝓮𝓼 ♕</li> <br /></Link>
+            <Link to="/dashboard/M_event"><li> ♘ 𝓔𝓿𝓮𝓷𝓽 ♘</li> <br /></Link>
+            {/* <Link to=""><li> ♙ 𝓢𝓽𝓾𝓭𝓮𝓷𝓽𝓼 ♙</li> <br /></Link>
             <Link to=""><li> ♙ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 ♙</li> <br /></Link>
-            
+            <Link to=""><li> ♛ 𝓒𝓸𝓪𝓬𝓱𝓼 ♛</li> <br /></Link>
+            <Link to=""><li> ♝ 𝓜𝓪𝓷𝓪𝓰𝓲𝓷𝓰 𝓑𝓸𝓭𝔂 ♝</li> <br /></Link> */}
+
           </ul>
         </div>
 
         <div className="dashboard_droite">
-        <Outlet />
+          
+          <Outlet />
+        
         </div>
       </div>
     </div>
