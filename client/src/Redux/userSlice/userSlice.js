@@ -28,10 +28,11 @@ export const userLogin  = createAsyncThunk("user/login",async (user) => {
 
 // get all users
 
-export const getUser = createAsyncThunk("User/", async () => {
+export const getUser = createAsyncThunk("getAllUser/", async () => {
     try {
       let response = await axios.get("http://localhost:5000/user/");
-      return await response;
+    
+      return await response.data;
     } catch (error) {
       console.log(error);
     }
@@ -46,7 +47,7 @@ export const userCurrent = createAsyncThunk("user/current",async () => {
                 Authorization: localStorage.getItem("token")
                      },
         });
-    return await response;
+    return await response.data;
     
     } catch (error) {
         console.log(error)
@@ -77,7 +78,8 @@ export const updateUser = createAsyncThunk("User/", async (id) => {
 
 const initialState = {
  user:null,
- status:null
+ status:null,
+ users:[],
 }
 
 export const userSlice = createSlice({
@@ -121,7 +123,7 @@ export const userSlice = createSlice({
     },
     [userCurrent.fulfilled]: (state,action)=> {
         state.status = "successful";
-        state.user = action.payload.data.user;
+        state.user = action.payload.user;
     },
     [userCurrent.rejected]: (state)=> {
         state.status = "failed";
@@ -133,8 +135,8 @@ export const userSlice = createSlice({
         state.status = "pending";
       },
       [getUser.fulfilled]: (state, action) => {
-        state.status = "successful";
-        state.User = action.payload.data.User;
+        state.status = action.payload.msg;
+        state.users = action.payload.user;
       },
       [getUser.rejected]: (state) => {
         state.status = "failed";

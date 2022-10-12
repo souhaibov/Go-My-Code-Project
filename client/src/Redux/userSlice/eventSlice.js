@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getEvent = createAsyncThunk("Event/", async () => {
+export const getEvent = createAsyncThunk("getEvent/", async () => {
   try {
     let response = await axios.get("http://localhost:5000/events");
-    return await response;
+    return await response.data;
   } catch (error) {
     console.log(error);
   }
@@ -54,14 +54,14 @@ export const EventSlice = createSlice({
   reducers: {},
   extraReducers: {
 
-    // add Event extrareducers
+    // get Event extrareducers
 
     [getEvent.pending]: (state) => {
       state.status = "pending";
     },
     [getEvent.fulfilled]: (state, action) => {
       state.status = "successful";
-      state.Event = action.payload.data.Event;
+      state.Event = action.payload;
     },
     [getEvent.rejected]: (state) => {
       state.status = "failed";

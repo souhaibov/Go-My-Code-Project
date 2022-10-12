@@ -1,12 +1,20 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const M_event = () => {
+
+  const data=useSelector((store)=>store.event.Event?.event)
+
   return (
-    <div>
-        <h1>marhbe</h1>
-        <h1>marhbe</h1>
-        <h1>marhbe</h1>
-        <h1>marhbe</h1>
+    <div className='event_data'>
+      <h1>Event List</h1>
+        <ul>
+            {data?.map(item =>
+                <li key={item?.id}>
+                    <p>{item?.place}</p>
+                </li>
+                )}
+        </ul>
     </div>
   )
 }

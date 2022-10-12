@@ -1,32 +1,26 @@
-import axios from 'axios';
-import React, { Fragment, useEffect, useState } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
+import "./M_user.css"
 
 const M_user = () => {
 
-const [data,setData] =useState([]);
+const data=useSelector((store)=>store.user?.users)
 
-useEffect(() => {
-  
-const fetchData = async() => {
-const result = await axios(
-    'https://cloud.mongodb.com/v2/6333a62ce8a8e23a070da54c#metrics/replicaSet/633468deee7b0542524f658f/explorer/test/users/find'
-);
-setData(result.data);
-};
-fetchData();
-},[]);
   return (
-    <Fragment>
     <div className='user_data'>
-        <ul>
+      <h1>User List</h1>
+        <ul className='user_list'>
             {data.map(item =>
-                <li key={item.id}>
-                    <p>{item.first_name}</p>
+                <li className='user_item' key={item.id}>
+                    <p>First Name : {item.first_name}</p>
+                    <p>Last Name : {item.last_name}</p>
+                    <p>Phone Number : {item.phone_number}</p>
+                    <p>Email : {item.email}</p>
+                    <p>{item.isAdmin}</p>
                 </li>
                 )}
         </ul>
     </div>
-    </Fragment>
   )
 }
 

@@ -34,7 +34,7 @@ const Footer = () => {
                 <li className="list-inline-item"><a href="../Login">Privacy Policy</a></li>
             </ul>
             <br/>
-            <p >© Copyright 2022 © Created By Souh@ibov. All Rights Reserved </p>
+            <p >© ℂ𝕠𝕡𝕪𝕣𝕚𝕘𝕙𝕥 𝟚𝟘𝟚𝟚 © ℂ𝕣𝕖𝕒𝕥𝕖𝕕 𝔹𝕪 𝕊𝕠𝕦𝕙@𝕚𝕓𝕠𝕧. 𝔸𝕝𝕝 ℝ𝕚𝕘𝕙𝕥𝕤 ℝ𝕖𝕤𝕖𝕣𝕧𝕖𝕕 </p>
         </footer>
     </div>
     </div>

@@ -3,10 +3,10 @@ import axios from 'axios'
 
                // get the list of activities
 
-export const getActivity = createAsyncThunk("Activity/",async () => {
+export const getActivity = createAsyncThunk("getActivity/",async () => {
     try {
         let response = await axios.get("http://localhost:5000/activities/activity");
-    return await response;
+    return await response.data;
     
     } catch (error) {
         console.log(error)
@@ -67,7 +67,7 @@ const initialState = {
        },
        [getActivity.fulfilled]: (state,action)=> {
            state.status = "successful";
-           state.Activity = action.payload.data.Activity;
+           state.Activity = action.payload;
        },
        [getActivity.rejected]: (state)=> {
            state.status = "failed";

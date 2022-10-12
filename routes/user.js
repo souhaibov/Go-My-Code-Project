@@ -87,7 +87,7 @@ console.log(token)
 router.get("/", async (req, res) => {
     try {
       const result = await User.find();
-      res.send(result);
+      res.send({user:result,msg:"get all user success"});
     } catch (error) {
       console.log("can't find the user");
     }
