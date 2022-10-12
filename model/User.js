@@ -9,7 +9,7 @@ password:{type:String ,required:true},
 isAdmin:{type:Boolean ,default:false},
 Age:{type:Number },
 Poster:{type:String },
-Status:{type:String },
+Status:{type:String ,default:"user"},
 Description:{type:String },
 })
 
