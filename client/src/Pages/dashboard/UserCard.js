@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { deleteUser, updateUser } from "../../Redux/userSlice/userSlice";
 
-
 const UserCard = ({ el }) => {
     
 
@@ -45,6 +44,7 @@ const UserCard = ({ el }) => {
       <td 
          onClick={() => dispatch(deleteUser({ id: el._id }))}>delete
       </td>
+     
     </tr>
   );
 };
