@@ -50,16 +50,16 @@ export const userCurrent = createAsyncThunk("user/current",async () => {
     return await response.data;
     
     } catch (error) {
-        console.log(error)
+ 
     }
 });
 
 // update a User
 
-export const updateUser = createAsyncThunk("User/", async (id) => {
+export const updateUser = createAsyncThunk("updateuser", async ({id,user}) => {
     try {
-      let response = await axios.put(`http://localhost:5000/user/update/${id}`);
-      return await response;
+      let response = await axios.put(`http://localhost:5000/user/update/${id}`,user);
+      return await response.data;
     } catch (error) {
       console.log(error);
     }
@@ -67,9 +67,10 @@ export const updateUser = createAsyncThunk("User/", async (id) => {
   
   // delete an User
   
-  export const deleteUser = createAsyncThunk("User/", async (id) => {
+  export const deleteUser = createAsyncThunk("deleteuser", async ({id}) => {
+    console.log(id)
     try {
-      let response = await axios.get(`http://localhost:5000/user/delete/${id}`);
+      let response = await axios.delete(`http://localhost:5000/user/delete/${id}`);
       return await response;
     } catch (error) {
       console.log(error);
@@ -80,6 +81,7 @@ const initialState = {
  user:null,
  status:null,
  users:[],
+ lastUserUpdated:null,
 }
 
 export const userSlice = createSlice({
@@ -149,6 +151,7 @@ export const userSlice = createSlice({
       },
       [updateUser.fulfilled]: (state, action) => {
         state.status = "successful";
+        state.lastUserUpdated = action.payload.User
       },
       [updateUser.rejected]: (state) => {
         state.status = "failed";

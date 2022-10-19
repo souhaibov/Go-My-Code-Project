@@ -17,11 +17,11 @@
     -moz-border-radius: 3%;
     -ms-border-radius: 3%;
     -o-border-radius: 3%;
-    opacity: 70%;
+    opacity: 90%;
 }
 .dashboard_gauche{
     /* border-style: dashed; */
-    background-color: rgba(166, 235, 222, 0.874);
+    background-color: rgba(148, 229, 214, 0.874);
     border-radius: 5%;
     width: 20vw;
     height: 150vh;
