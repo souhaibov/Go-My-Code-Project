@@ -23,9 +23,9 @@ export const postEvent = createAsyncThunk("Event/", async (Event) => {
 
 // update an Event
 
-export const updateEvent = createAsyncThunk("Event/", async (id) => {
+export const updateEvent = createAsyncThunk("Event/", async ({id,event}) => {
   try {
-    let response = await axios.put(`http://localhost:5000/events/update${id}`);
+    let response = await axios.put(`http://localhost:5000/events/update${id}`,event);
     return await response;
   } catch (error) {
     console.log(error);

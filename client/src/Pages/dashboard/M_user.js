@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { deleteUser } from "../../Redux/userSlice/userSlice";
+import {  useSelector } from "react-redux";
 import "./M_user.css";
 import UserCard from "./UserCard";
 
@@ -11,6 +10,9 @@ const M_user = () => {
     <div className="user_data">
       <br />
       <h2>User List</h2>
+      <br />
+      <button >Add a New User</button>
+      <br />
       <br />
       <div className="user_list">
         <table width="100%">

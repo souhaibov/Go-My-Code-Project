@@ -30,7 +30,7 @@ const UserCard = ({ el }) => {
       <td onClick={() => {dispatch(updateUser({ id: el._id, user: user }));setShow(false)}}>
         update
       </td>
-      <td onClick={() => setShow(false)}>annuler</td>
+      <td onClick={() => setShow(false)}>cancel</td>
     </tr>
   ) : (
     <tr className="info_user">

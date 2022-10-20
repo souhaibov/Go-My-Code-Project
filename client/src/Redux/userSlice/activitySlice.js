@@ -27,9 +27,9 @@ export const postActivity = createAsyncThunk("Activity/",async () => {
 
                   // update an activity
 
-export const updateActivity = createAsyncThunk("Activity/",async (id) => {
+export const updateActivity = createAsyncThunk("Activity/",async ({id,Activity}) => {
     try {
-        let response = await axios.put(`http://localhost:5000/activities/activity/update/${id}`);
+        let response = await axios.put(`http://localhost:5000/activities/activity/update/${id}`,Activity);
     return await response;
     
     } catch (error) {

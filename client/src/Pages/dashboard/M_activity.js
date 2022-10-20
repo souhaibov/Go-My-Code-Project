@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import ActivityCard from './ActivityCard'
 import "./M_activity.css"
 
 const M_activity = () => {
@@ -21,8 +22,7 @@ const M_activity = () => {
                 </tr>
                 
 
-{data?.map((el)=><tr><td>{el.NumberOfStudents}</td><td><img src={el.tof} style={{width:"60px", height:"60px"
-}}/></td><td>{el.place}</td><td>update</td><td>delete</td></tr>)}
+{data?.map((el,i)=>(<ActivityCard key={i} el={el}/>))}
 
 </table>
         </div>

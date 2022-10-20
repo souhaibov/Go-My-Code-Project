@@ -125,7 +125,7 @@ export const userSlice = createSlice({
     },
     [userCurrent.fulfilled]: (state,action)=> {
         state.status = "successful";
-        state.user = action.payload.user;
+        state.user = action.payload;
     },
     [userCurrent.rejected]: (state)=> {
         state.status = "failed";

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import EventCard from './EventCard'
 import "./M_event.css"
 
 const M_event = () => {
@@ -12,7 +13,7 @@ const M_event = () => {
         <div className='event_list'>
            
                 <table width="100%">
-                
+                <tr>
                   <th>Title</th>
                   <th>Picture</th>
                   <th>Place</th>
@@ -20,10 +21,12 @@ const M_event = () => {
                   <th>Description</th>
                   <th>Edit</th>
                   <th>Delete</th>
-               
+               </tr>
                 
 
-{data?.map((el)=><tr><td>{el.Title}</td><td>{el.tof}</td><td>{el.place}</td><td>{el.Date}</td><td>{el.Description}</td><td>update</td><td>delete</td></tr>)}
+{data?.map((el,i) => (<EventCard key={i} el={el}/>))}
+
+{/* <tr><td>{el.Title}</td><td>{el.tof}</td><td>{el.place}</td><td>{el.Date}</td><td>{el.Description}</td><td>update</td><td>delete</td></tr>)} */}
 
 </table>
         </div>
