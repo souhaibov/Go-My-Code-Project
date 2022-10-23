@@ -1,18 +1,113 @@
 import React, { useState } from "react";
-import {  useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { userRegister } from "../../Redux/userSlice/userSlice";
 import "./M_user.css";
 import UserCard from "./UserCard";
 
 const M_user = () => {
   const data = useSelector((store) => store.user?.users);
-  
+  const [show, setShow] = useState(false);
+  const [register, setRegister] = useState({
+    first_name: "",
+    last_name: "",
+    phone_number: "",
+    email: "",
+    password: "",
+    Age: "",
+    Poster: "",
+    Status: "",
+  });
+
+  const dispatch = useDispatch();
+
   return (
     <div className="user_data">
       <br />
       <h2>User List</h2>
       <br />
-      <button >Add a New User</button>
+      <button onClick={() => setShow(!show)}>Add a New User</button>
       <br />
+      {show ? (
+        <div>
+          <div id="form" class="topBefore">
+            <div className="info">
+              <input
+                type="text"
+                placeholder="first name"
+                onChange={(e) =>
+                  setRegister({ ...register, first_name: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="last name"
+                onChange={(e) =>
+                  setRegister({ ...register, last_name: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="phone number"
+                onChange={(e) =>
+                  setRegister({ ...register, phone_number: e.target.value })
+                }
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="email"
+                onChange={(e) =>
+                  setRegister({ ...register, email: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="password"
+                onChange={(e) =>
+                  setRegister({ ...register, password: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="isAdmin"
+                onChange={(e) =>
+                  setRegister({ ...register, isAdmin: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="Poster"
+                onChange={(e) =>
+                  setRegister({ ...register, Poster: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                placeholder="Status"
+                onChange={(e) =>
+                  setRegister({ ...register, Status: e.target.value })
+                }
+              />
+              <input
+                type="number"
+                placeholder="Age"
+                min={4}
+                onChange={(e) =>
+                  setRegister({ ...register, Age: e.target.value })
+                }
+              />
+            </div>
+
+            <button
+              onClick={() => {
+                dispatch(userRegister(register));
+              }}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      ) : null}
       <br />
       <div className="user_list">
         <table width="100%">
@@ -26,8 +121,8 @@ const M_user = () => {
             <th>Delete</th>
           </tr>
 
-          {data?.map((el,i) => (
-           <UserCard key={i} el={el}/>
+          {data?.map((el, i) => (
+            <UserCard key={i} el={el} />
           ))}
         </table>
       </div>

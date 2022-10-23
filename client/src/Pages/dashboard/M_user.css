@@ -21,4 +21,40 @@
 .user_list table{
     /* border-style: double; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-border:none}
+border:none
+}
+
+
+button{
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(3, 105, 76);
+    font-size: 22px;
+    width: 200px;
+    height: 40px;
+}
+
+.info{
+    display: flex;
+ 
+    flex-wrap: wrap;
+   
+     font-size:26px;
+     margin: 20px 20px 20px 140px;
+     align-items: center;
+     
+ }
+ .info input{
+     padding: 10px;
+     margin: 10px 62px;
+     background-color: rgb(209, 248, 235);
+ }
+
+
+ .topBefore{
+    align-items: center;
+}
+
+
+
+

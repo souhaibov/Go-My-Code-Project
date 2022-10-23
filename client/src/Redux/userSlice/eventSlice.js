@@ -10,7 +10,7 @@ export const getEvent = createAsyncThunk("getEvent/", async () => {
   }
 });
 
-// add a new activity
+// add a new Event
 
 export const postEvent = createAsyncThunk("Event/", async (Event) => {
   try {
