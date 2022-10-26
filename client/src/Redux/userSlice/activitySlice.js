@@ -3,7 +3,7 @@ import axios from 'axios'
 
                // get the list of activities
 
-export const getActivity = createAsyncThunk("getActivity/",async () => {
+export const getActivity = createAsyncThunk("getActivity/get",async () => {
     try {
         let response = await axios.get("http://localhost:5000/activities/activity");
     return await response.data;
@@ -15,9 +15,9 @@ export const getActivity = createAsyncThunk("getActivity/",async () => {
 
                  // add a new activities
 
-export const postActivity = createAsyncThunk("Activity/",async () => {
+export const postActivity = createAsyncThunk("Activity/add",async (act) => {
     try {
-        let response = await axios.post("http://localhost:5000/activities/activity/add");
+        let response = await axios.post("http://localhost:5000/activities/activity/add",act);
     return await response;
     
     } catch (error) {
@@ -27,7 +27,7 @@ export const postActivity = createAsyncThunk("Activity/",async () => {
 
                   // update an activity
 
-export const updateActivity = createAsyncThunk("Activity/",async ({id,Activity}) => {
+export const updateActivity = createAsyncThunk("Activity/updated",async ({id,Activity}) => {
     try {
         let response = await axios.put(`http://localhost:5000/activities/activity/update/${id}`,Activity);
     return await response;
@@ -39,9 +39,9 @@ export const updateActivity = createAsyncThunk("Activity/",async ({id,Activity})
 
                    // delete an activity
 
-export const deleteActivity = createAsyncThunk("Activity/",async (id) => {
+export const deleteActivity = createAsyncThunk("Activity/delete",async ({id}) => {
     try {
-        let response = await axios.get(`http://localhost:5000/activities/activity/delete/${id}`);
+        let response = await axios.delete(`http://localhost:5000/activities/activity/delete/${id}`);
     return await response;
     
     } catch (error) {

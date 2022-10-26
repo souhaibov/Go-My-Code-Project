@@ -6,20 +6,16 @@ import { getUser } from "../Redux/userSlice/userSlice";
 import { getActivity } from "../Redux/userSlice/activitySlice";
 import { getEvent } from "../Redux/userSlice/eventSlice";
 
-const Dashboard = () => {
+const Dashboard = ({ping}) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getUser())
-  }, []);
-
-  useEffect(() => {
-    dispatch(getActivity())
-  }, []);
-
-  useEffect(() => {
     dispatch(getEvent())
-  }, []);
+    dispatch(getActivity())
+  }, [ping]);
+
+
     
   return (
     <div>

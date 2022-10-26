@@ -4,7 +4,7 @@ import { postActivity } from '../../Redux/userSlice/activitySlice'
 import ActivityCard from './ActivityCard'
 import "./M_activity.css"
 
-const M_activity = () => {
+const M_activity = ({ping,setPing}) => {
   
   const data=useSelector((store)=>store.activity.Activity)
 
@@ -29,7 +29,7 @@ const M_activity = () => {
           <div id="form" class="topBefore">
             <div className="info">
               <input
-                type="text"
+                type="number"
                 placeholder="Number Of Students"
                 onChange={(e) =>
                   setActivity({ ...activity, NumberOfStudents: e.target.value })
@@ -53,7 +53,8 @@ const M_activity = () => {
                <br />
                <button
               onClick={() => {
-                dispatch(postActivity(activity));setShow(false)}}>
+                dispatch(postActivity(activity));setShow(false)
+                setPing(!ping)}}>
               Submit
             </button>
           </div>
@@ -73,7 +74,7 @@ const M_activity = () => {
                 </tr>
                 
 
-{data?.map((el,i)=>(<ActivityCard key={i} el={el}/>))}
+{data?.map((el,i)=>(<ActivityCard key={i} el={el} ping={ping} setPing={setPing}/>))}
 
 </table>
         </div>

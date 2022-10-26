@@ -4,7 +4,7 @@ import { postEvent } from '../../Redux/userSlice/eventSlice'
 import EventCard from './EventCard'
 import "./M_event.css"
 
-const M_event = () => {
+const M_event = ({ping,setPing}) => {
 
   const data=useSelector((store)=>store.event.Event?.event)
 // afficher le formulaire d'ajout 
@@ -74,7 +74,10 @@ const M_event = () => {
 
 <button
   onClick={() => {
-    dispatch(postEvent(event));setShow(false)}}>
+    dispatch(postEvent(event));
+    setShow(false);
+    setPing(!ping)
+    }}>
   Submit
 </button>
 <br /><br />
@@ -95,7 +98,7 @@ const M_event = () => {
                </tr>
                 
 
-{data?.map((el,i) => (<EventCard key={i} el={el}/>))}
+{data?.map((el,i) => (<EventCard key={i} el={el} ping={ping} setPing={setPing}/>))}
 
 {/* <tr><td>{el.Title}</td><td>{el.tof}</td><td>{el.place}</td><td>{el.Date}</td><td>{el.Description}</td><td>update</td><td>delete</td></tr>)} */}
 

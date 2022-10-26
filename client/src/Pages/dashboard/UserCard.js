@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { deleteUser, updateUser } from "../../Redux/userSlice/userSlice";
 
-const UserCard = ({ el }) => {
+const UserCard = ({ el,ping,setPing }) => {
     
 
   const [show, setShow] = useState(false);
@@ -27,7 +27,7 @@ const UserCard = ({ el }) => {
       <td>
         <input onChange={handleChange} type="text" defaultValue={el.Status} name="Status" />
       </td>
-      <td onClick={() => {dispatch(updateUser({ id: el._id, user: user }));setShow(false)}}>
+      <td onClick={() => {dispatch(updateUser({ id: el._id, user: user }));setShow(false);setPing(!ping)}}>
         update
       </td>
       <td onClick={() => setShow(false)}>cancel</td>
@@ -42,7 +42,7 @@ const UserCard = ({ el }) => {
       <td onClick={() => setShow(true)}>update</td>
       
       <td 
-         onClick={() => dispatch(deleteUser({ id: el._id }))}>delete
+         onClick={() =>{ dispatch(deleteUser({ id: el._id }));setPing(!ping)}}>delete
       </td>
      
     </tr>

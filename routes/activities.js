@@ -18,6 +18,7 @@ Activityroute.get("/activity", async (req, res) => {
   //http://localhost:5000/activities/activity/add
   
   Activityroute.post("/activity/add", async (req, res) => {
+    console.log(req.body);
     const newActivities = new Activities(req.body);
     const result = await newActivities.save();
     res.send(result);

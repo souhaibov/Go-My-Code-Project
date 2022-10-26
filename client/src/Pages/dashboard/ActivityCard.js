@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { deleteActivity, updateActivity } from "../../Redux/userSlice/activitySlice";
 
-const ActivityCard = ({ el }) => {
+const ActivityCard = ({ el ,ping ,setPing}) => {
     
 
   const [show, setShow] = useState(false);
@@ -13,7 +13,7 @@ const ActivityCard = ({ el }) => {
   return show ? (
     <tr className="info_Activity">
       <td>
-        <input onChange={handleChange} type="text" defaultValue={el.NumberOfStudents} name="NumberOfStudents" />
+        <input onChange={handleChange} type="number" defaultValue={el.NumberOfStudents} name="NumberOfStudents" />
       </td>
       <td>
         <input onChange={handleChange} type="text" defaultValue={el.tof} name="tof" />
@@ -22,7 +22,7 @@ const ActivityCard = ({ el }) => {
         <input onChange={handleChange} type="text" defaultValue={el.place} name="place" />
       </td>
       
-      <td onClick={() => {dispatch(updateActivity({ id: el._id, Activity: Activity }));setShow(false)}}>
+      <td onClick={() => {dispatch(updateActivity({ id: el._id, Activity: Activity }));setShow(false);setPing(!ping)}}>
         update
       </td>
       <td onClick={() => setShow(false)}>cancel</td>
@@ -35,7 +35,7 @@ const ActivityCard = ({ el }) => {
       <td onClick={() => setShow(true)}>update</td>
       
       <td 
-         onClick={() => dispatch(deleteActivity({ id: el._id }))}>delete
+         onClick={() =>{ dispatch(deleteActivity({ id: el._id })); setPing(!ping)}}>delete
       </td>
     
 

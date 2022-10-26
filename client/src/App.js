@@ -25,6 +25,7 @@ import M_activity from "./Pages/dashboard/M_activity";
 import M_user from "./Pages/dashboard/M_user";
 
 function App() {
+  const [ping, setPing] = useState(false)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(userCurrent());
@@ -66,10 +67,10 @@ function App() {
           />
 
            <Route element={<PrivateRoute/>}>
-            <Route path="/Dashboard" element={<Dashboard />}>
-                 <Route path="/Dashboard/event" element={<M_event/>} />
-                 <Route path="/Dashboard/activity" element={<M_activity/>} />
-                 <Route path="/Dashboard/user" element={<M_user/>} />
+            <Route path="/Dashboard" element={<Dashboard ping={ping}/>}>
+                 <Route path="/Dashboard/event" element={<M_event ping={ping} setPing={setPing} />} />
+                 <Route path="/Dashboard/activity" element={<M_activity ping={ping} setPing={setPing}/>} />
+                 <Route path="/Dashboard/user" element={<M_user ping={ping} setPing={setPing}/>} />
             </Route>
            </Route>
 

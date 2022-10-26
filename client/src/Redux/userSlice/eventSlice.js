@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getEvent = createAsyncThunk("getEvent/", async () => {
+export const getEvent = createAsyncThunk("getEvent/getall", async () => {
   try {
     let response = await axios.get("http://localhost:5000/events");
     return await response.data;
@@ -12,7 +12,7 @@ export const getEvent = createAsyncThunk("getEvent/", async () => {
 
 // add a new Event
 
-export const postEvent = createAsyncThunk("Event/", async (Event) => {
+export const postEvent = createAsyncThunk("Event/add", async (Event) => {
   try {
     let response = await axios.post("http://localhost:5000/events/add",Event);
     return await response;
@@ -23,9 +23,9 @@ export const postEvent = createAsyncThunk("Event/", async (Event) => {
 
 // update an Event
 
-export const updateEvent = createAsyncThunk("Event/", async ({id,event}) => {
+export const updateEvent = createAsyncThunk("Event/update", async ({id,event}) => {
   try {
-    let response = await axios.put(`http://localhost:5000/events/update${id}`,event);
+    let response = await axios.put(`http://localhost:5000/events/update/${id}`,event);
     return await response;
   } catch (error) {
     console.log(error);
@@ -34,9 +34,9 @@ export const updateEvent = createAsyncThunk("Event/", async ({id,event}) => {
 
 // delete an Event
 
-export const deleteEvent = createAsyncThunk("Event/", async (id) => {
+export const deleteEvent = createAsyncThunk("Event/delete", async ({id}) => {
   try {
-    let response = await axios.get(`http://localhost:5000/events/delete/${id}`);
+    let response = await axios.delete(`http://localhost:5000/events/delete/${id}`);
     return await response;
   } catch (error) {
     console.log(error);

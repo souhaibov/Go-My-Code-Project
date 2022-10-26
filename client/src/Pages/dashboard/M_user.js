@@ -4,7 +4,7 @@ import { userRegister } from "../../Redux/userSlice/userSlice";
 import "./M_user.css";
 import UserCard from "./UserCard";
 
-const M_user = () => {
+const M_user = ({ping,setPing}) => {
   const data = useSelector((store) => store.user?.users);
   const [show, setShow] = useState(false);
   const [register, setRegister] = useState({
@@ -101,6 +101,8 @@ const M_user = () => {
             <button
               onClick={() => {
                 dispatch(userRegister(register));
+                setShow(false);
+                setPing(!ping)
               }}
             >
               Submit
@@ -122,7 +124,7 @@ const M_user = () => {
           </tr>
 
           {data?.map((el, i) => (
-            <UserCard key={i} el={el} />
+            <UserCard key={i} el={el} ping={ping} setPing={setPing}/>
           ))}
         </table>
       </div>

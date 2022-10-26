@@ -27,6 +27,7 @@ Eventsroute.get("/", async (req, res) => {
   // http://localhost:5000/events/update/
   
   Eventsroute.put("/update/:id", async (req, res) => {
+    console.log(req.body)
       try {
         const result = await Events.findByIdAndUpdate({_id: req.params.id},{$set:req.body},{new:true});
         res.send({Events:result, msg:"Events updated"});
