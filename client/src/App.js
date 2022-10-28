@@ -9,7 +9,7 @@ import ContactUs from "./Pages/ContactUs";
 import About from "./Pages/About";
 import Login from "./Pages/Login";
 import DataStudent from "./Components/DataStudents";
-import { useEffect, useState /*,settext*/ } from "react";
+import { useEffect, useState } from "react";
 import Students from "./Pages/Students";
 import Instructors from "./Pages/Instructors";
 import DataInstructors from "./Components/DataInstructors";
@@ -23,12 +23,17 @@ import PrivateRoute from "./route/PrivateRoute";
 import M_event from "./Pages/dashboard/M_event";
 import M_activity from "./Pages/dashboard/M_activity";
 import M_user from "./Pages/dashboard/M_user";
+import { getEvent } from "./Redux/userSlice/eventSlice";
+import { getActivity } from "./Redux/userSlice/activitySlice";
 
 function App() {
   const [ping, setPing] = useState(false)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(userCurrent());
+    dispatch(getEvent());
+    dispatch(getActivity())
+
   }, [dispatch]);
   //   return () => {
 
@@ -51,9 +56,9 @@ function App() {
             path="/Students"
             element={
               <Students
-                /*settext={settext}*/ DataStudent={
+              DataStudent={
                   Datastudent
-                } /*Students={Students}*/
+                }
               />
             }
           />

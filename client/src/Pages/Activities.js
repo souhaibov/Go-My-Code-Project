@@ -1,7 +1,12 @@
 import React from 'react'
-import DataActivities from '../Components/DataActivities'
+import { useSelector } from 'react-redux'
 import "../Style/activities.css"
 const Activities = () => {
+
+  const activity = useSelector((store) => store.activity?.Activity);
+  console.log(activity)
+
+
   return (
     <div>
       <br/>
@@ -10,19 +15,14 @@ const Activities = () => {
       </h1>
       <br/>
             <div className='card-Activities'>
-        {DataActivities?.map((el) => (
+        {activity?.map((el) => (
         <div className='Activities'>
-          <br/>
-           <h2 style={{fontSize:"32px",color: 'green'}}>【﻿Work Space】: {el.place}</h2>
+          <br/><br/>
+           <h2 style={{fontSize:"36px",color: 'darkgreen'}}>【﻿Work Space】: {el.place}</h2>
            <br/>
-           <h2 style={{color: 'darkgreen'}}>Number Of Students : {el.NumberOfStudents}</h2>
+           <h2 style={{color: 'darkgreen',fontSize:"32px"}}>𝓝𝓾𝓶𝓫𝓮𝓻 𝓞𝓯 𝓢𝓽𝓾𝓭𝓮𝓷𝓽𝓼 : {el.NumberOfStudents}</h2>
            <br/>
-           <div className='list-image'>
-          {el.tof.map(image=><div><img src={image} alt={el.place}/></div>)}
-          
-          
-          </div>
-          {/* <a href={el.video} target="_blank" rel="noreferrer"></a> */}
+
           <br/>
           <div className='st-description'>
            

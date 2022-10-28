@@ -4,12 +4,12 @@ import "../Style/Events.css";
 
 const Events = () => {
   const events = useSelector((store) => store.event?.Event?.event);
-  console.log(events);
+
   return (
     <div>
       <br />
       <h1>Open Days</h1>
-      {events.map((el, i) => (
+      {events?.map((el, i) => (
         <div className="card-events">
           <br />
           <div className="yawm-maftouh">
@@ -25,11 +25,13 @@ const Events = () => {
             <br />
             <br />
             <br />
-            <h2>Place : {el.place} </h2>
+            <h2>𝓟𝓵𝓪𝓬𝓮 : {el.place} </h2>
             <br />
-
             <br />
-            <h2>Description : {el.description}</h2>
+            <h2> ♜ ᗪαţ𝔢 :♜  {el.Date} </h2>
+            <br />
+            <br />
+            <h2>•• 𝐝𝑒s¢г𝕚𝓅𝓽𝒾𝑜𝓷 •• : {el.Description}</h2>
             <br />
           </div>
         </div>
