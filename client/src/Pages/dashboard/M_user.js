@@ -4,6 +4,8 @@ import { userRegister } from "../../Redux/userSlice/userSlice";
 import "./M_user.css";
 import UserCard from "./UserCard";
 
+
+
 const M_user = ({ping,setPing}) => {
   const data = useSelector((store) => store.user?.users);
   const [show, setShow] = useState(false);
@@ -46,8 +48,10 @@ const M_user = ({ping,setPing}) => {
                 }
               />
               <input
-                type="text"
+                type="tel"
                 placeholder="phone number"
+                id="phone" 
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 onChange={(e) =>
                   setRegister({ ...register, phone_number: e.target.value })
                 }
@@ -84,6 +88,7 @@ const M_user = ({ping,setPing}) => {
               <input
                 type="text"
                 placeholder="Status"
+                
                 onChange={(e) =>
                   setRegister({ ...register, Status: e.target.value })
                 }
@@ -101,8 +106,9 @@ const M_user = ({ping,setPing}) => {
             <button
               onClick={() => {
                 dispatch(userRegister(register));
-                setShow(false);
-                setPing(!ping)
+                setPing(!ping);
+                setShow(false)
+                
               }}
             >
               Submit

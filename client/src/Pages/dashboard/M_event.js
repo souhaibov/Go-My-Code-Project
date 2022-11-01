@@ -57,7 +57,8 @@ const M_event = ({ping,setPing}) => {
               />
               <br />
               <input
-                type="text"
+                style={{width: '185px'}}
+                type="Date"
                 placeholder="Date"
                 onChange={(e) =>
                   setEvent({ ...event, Date: e.target.value })

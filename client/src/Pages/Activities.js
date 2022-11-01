@@ -4,7 +4,7 @@ import "../Style/activities.css"
 const Activities = () => {
 
   const activity = useSelector((store) => store.activity?.Activity);
-  console.log(activity)
+
 
 
   return (

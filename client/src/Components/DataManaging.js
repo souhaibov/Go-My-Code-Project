@@ -1,11 +1,13 @@
 const DataManage=[   
-    { id:1 , name:'a',job:'President',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:2 ,name:'b',job:'General Secretary',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:3 ,name:'c',job:'General Secretary Helper',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:4 ,name:'d',job:'Treasurer',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:5 ,name:'e',job:'Treasurer Helper',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:6 ,name:'f',job:'vice president',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
-    { id:7 ,name:'g',job:'Member responsible for youth',photo:'https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/299816419_605702901109783_5843478481328088695_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=qX4Jy3bUsagAX8Euuq6&_nc_oc=AQkXrH-PZdlzYLWjENtaM-bZXg8UJuk8cP10deqP6OgMdJXL5WMrNtz8BheXsZbtqyw&_nc_ht=scontent.ftun15-1.fna&oh=00_AT-x2suHAXddOw3uMDKs89RPYIkHB7n6nLYrWEx7CQR9kA&oe=6312DFCE'},
+    { id:1 , name:'Tarak Abdesslem',job:'President',photo:'tarak.jpg'},
+     { id:6 ,name:'Nazih Chammam',job:'vice president',photo:'nazih.jpg'},
+     { id:2 ,name:'Ahlem Abdelkader',job:'General Secretary',photo:'ahlem.jpg'},
+    { id:4 ,name:'Ahmed Chamakh',job:'Treasurer',photo:'ahmedCh1.jpg'},
+    { id:3 ,name:'Ines Berrich',job:'General Secretary Helper',photo:'ines.jpg'},
+    
+    { id:5 ,name:'Souhaib Salem',job:'Treasurer Helper',photo:'me.jpg'},
+   
+    { id:7 ,name:'Ahmed Hemdani',job:'Member responsible for youth',photo:'ahmedhm'},
    
 ]
 export default DataManage;

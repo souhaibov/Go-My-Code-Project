@@ -4,17 +4,24 @@ import '../Style/managing.css'
 
 const Managing = () => {
   return (
+  <div>
+     <br />
+  <h1>Club Officials Season 2022</h1>
     <div className='card-manager'>
+      
+      
         {DataManage?.map((el) => (
         <div className='manager'>
           <div><img src={el.photo} alt={el.name}/></div>
           <br/>
           <div className='mn-description'>
-            <h2 style={{color: 'green4'}}>Name: {el.name}</h2>
-            <h2 style={{color: 'ForestGreen'}}>job: {el.job}</h2>
+            <h2 >Name: {el.name}</h2>
+            <br />
+            <h2 style={{color: 'ForestGreen'}}>Post : {el.job}</h2>
         </div>
     </div>
       ))}
+    </div>
     </div>
   )
 }
