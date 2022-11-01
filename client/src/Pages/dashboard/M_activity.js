@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { postActivity } from '../../Redux/userSlice/activitySlice'
+import AddFiles from '../UploadImg'
 import ActivityCard from './ActivityCard'
 import "./M_activity.css"
 
@@ -11,7 +12,7 @@ const M_activity = ({ping,setPing}) => {
   const [show, setShow] = useState(false);
   const [activity, setActivity] = useState({
     NumberOfStudents: "",
-    tof: "",
+    tof: [],
     place: "",
   });
 
@@ -35,13 +36,16 @@ const M_activity = ({ping,setPing}) => {
                   setActivity({ ...activity, NumberOfStudents: e.target.value })
                 }
               />
-              <input
+              {/* <input
                 type="text"
                 placeholder="picture of the Activity"
                 onChange={(e) =>
                   setActivity({ ...activity, tof: e.target.value })
                 }
-              />
+              /> */}
+
+                <AddFiles setActivity={setActivity} activity={activity} />
+
               <input
                 type="text"
                 placeholder="the Place of the Activity"

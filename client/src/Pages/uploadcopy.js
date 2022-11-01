@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from "react";
 // import ProgressBar from "react-bootstrap/ProgressBar";
 import axios from "axios";
+import { postActivity } from "../Redux/userSlice/activitySlice";
+import { useDispatch } from "react-redux";
 // import { useDispatch, useSelector } from "react-redux";
 // import { addServiceFile } from "../../redux/slices/serviceSlice";
 // import "../Styles/AddFiles.css";
 
-function AddFiles( {setActivity,activity}) {
+function AddFiles() {
 //   const user = useSelector((state) => state.user?.user);
-//   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 //   const [show, setshow] = useState(false);
   const [upload, setupload] = useState([]);
 
   const [file, setfile] = useState({
-    files: [],
-    description: "",
+    tof: [],
+    NumberOfStudents:"",
+    place: "",
   });
 
-  useEffect(() => {
+    useEffect(() => {
     setfile({ ...file});
   }, []);
   const bar = document.getElementById("progress-bar");
@@ -67,20 +70,25 @@ function AddFiles( {setActivity,activity}) {
 
     // Once all the files are uploaded
     await axios.all(uploaders).then(async (result) => {
-      setfile({ ...file, files: result });
-      setActivity({...activity , tof: result})
+      setfile({ ...file, tof: result });
      
-    //   dispatch(addServiceFile({ ...file, files: result }));
+      dispatch(postActivity({ ...file, tof: result }));
     //   setPing(!ping);
       // ... perform after upload is successful operation
     });
   };
 
   return (
-    <div className="">
+    <div className="Addfiles">
+      <span className="project-path">
+        
+      </span>
 
+        <>
+          <h1>Ajout des fichiers</h1>
           <div className="addImage"><br/>
             <label for="input-upload">
+              Merci de choisir un fichier
               <input
                 className="input-upload"
                 type="file"
@@ -89,11 +97,27 @@ function AddFiles( {setActivity,activity}) {
                 accept="image/*"
                 required
                 onChange={(e) => {
-                  setupload(Object.values(e.target.files));
+                  setupload(Object.values(e.target.tof));
                 }}
               /><br/>
             </label><br/>
+            <h4>The place of the activity..</h4>{" "}
             
+            <textarea
+              name="feed"
+              onChange={(e) =>
+                setfile({ ...file, place: e.target.value })
+              }
+            />
+            <h4>The number of students..</h4>{" "}
+            
+            <input
+              type="number"
+             
+              onChange={(e) =>
+                setfile({ ...file, NumberOfStudents: e.target.value })
+              }
+            />
             {upload[0] ? (
               <input
                 className="btn-upload"
@@ -109,7 +133,7 @@ function AddFiles( {setActivity,activity}) {
             <label for="progress-bar">0%</label>
             <progress id="progress-bar" value="0" max="100"></progress>
           </div>
-      
+        </>
     {/* <img src={upload[0]} alt=""/> */}
     </div>
   );

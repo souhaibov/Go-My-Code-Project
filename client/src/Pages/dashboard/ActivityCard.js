@@ -29,9 +29,9 @@ const ActivityCard = ({ el ,ping ,setPing}) => {
     </tr>
   ) : (
     <tr className="info_Activity">
-      <td>{el.NumberOfStudents}</td>
-      <td><img style={{width:"60px", height:"60px"}} src={el.tof} alt='' /></td>
-      <td>{el.place}</td>
+      <td>{el?.NumberOfStudents}</td>
+      <td>{el?.tof?.map((tofa,i)=><img key={i} style={{width:"60px", height:"60px"}} src={tofa?.url} alt='' />)}</td>
+      <td>{el?.place}</td>
       <td onClick={() => setShow(true)}><button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button></td>
       
       <td 

@@ -18,7 +18,7 @@
   .description_club{
     
 font-size: 26px;
-
+width: 100%;
 display: flex;
 justify-content: space-around;
 
@@ -34,7 +34,7 @@ justify-content: space-around;
     padding: 20px;
     text-shadow: black 0.045em 0.025em 0.025em;
     line-height: 40px;
-    width: 32%;
+    width: 90%;
     background-color: rgb(194, 246, 205);
    
 }
@@ -50,7 +50,8 @@ text-align: center;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
-
-
-
+.languages{
+    display: flex;
+  
+    justify-content: right;
+}

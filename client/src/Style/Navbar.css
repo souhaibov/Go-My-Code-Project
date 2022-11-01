@@ -62,10 +62,11 @@
 } 
 .botton_login{
     margin-left: 10px;
-  width:80px ;
+    border: 3px solid white;
+  width:120px ;
   height:40px ;
   font-size: 18px;
-  background-color: rgb(80, 179, 146);
+  background-color: rgb(0, 0, 0);
   border-radius: 50px ;
   cursor: pointer;
 }
