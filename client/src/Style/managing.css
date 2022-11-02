@@ -9,15 +9,19 @@
 }
 
 .manager{
-    background-color: rgb(192, 243, 203);
-    display: flex;
-    flex-direction: column;
+   background-color: rgb(192, 243, 203);
+   display: flex;
+   flex-direction: column;
    width: 30vw;
    height: 80vh;
    margin: 30px 30px ;
    box-shadow:  rgba(170, 125, 177, 0.56) 0px 22px 70px 4px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    padding-top: 20px;
-   border-radius: 30%;
+   border-radius: 20%;
+   -webkit-border-radius: 20%;
+   -moz-border-radius: 20%;
+   -ms-border-radius: 20%;
+   -o-border-radius: 20%;
 } 
 
 .mn-description{
@@ -28,7 +32,7 @@
     width: 25vw;
     height: 50vh;
     margin: 20px;
-    -webkit-border-radius: 30%;
+    -webkit-border-radius: 20%;
     -moz-border-radius: 30%;
     -ms-border-radius: 30%;
     -o-border-radius: 30%;

@@ -34,11 +34,11 @@ const EventCard = ({ el,ping,setPing }) => {
     </tr>
   ) : (
     <tr className="info_Event">
-      <td>{el.Title}</td>
-      <td>{el.tof}</td>
-      <td>{el.place}</td>
-      <td>{el.Date}</td>
-      <td>{el.Description}</td>
+      <td>{el?.Title}</td>
+      <td>{el?.tof?.map((tofa,i)=><img key={i} style={{width:"60px", height:"60px"}} src={tofa?.url} alt='' />)}</td>
+      <td>{el?.place}</td>
+      <td>{el?.Date}</td>
+      <td>{el?.Description}</td>
       <td onClick={() => setShow(true)}><button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button></td>
       
       <td 

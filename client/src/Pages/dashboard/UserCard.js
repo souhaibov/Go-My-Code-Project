@@ -13,32 +13,32 @@ const UserCard = ({ el,ping,setPing }) => {
   return show ? (
     <tr className="info_user">
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.first_name} name="first_name" />
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.first_name} name="first_name" />
       </td>
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.last_name} name="last_name" />
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.last_name} name="last_name" />
       </td>
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" defaultValue={el.phone_number}/>
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" defaultValue={el?.phone_number}/>
       </td>
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.email} name="email" />
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.email} name="email" />
       </td>
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.Status} name="Status" />
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Status} name="Status" />
       </td>
-      <td onClick={() => {dispatch(updateUser({ id: el._id, user: user }));setShow(false);setPing(!ping)}}>
+      <td onClick={() => {dispatch(updateUser({ id: el?._id, user: user }));setShow(false);setPing(!ping)}}>
         <button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button>
       </td>
       <td onClick={() => setShow(false)}><button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>cancel</button></td>
     </tr>
   ) : (
     <tr className="info_user">
-      <td>{el.first_name}</td>
-      <td>{el.last_name}</td>
-      <td>{el.phone_number}</td>
-      <td>{el.email}</td>
-      <td>{el.Status}</td>
+      <td>{el?.first_name}</td>
+      <td>{el?.last_name}</td>
+      <td>{el?.phone_number}</td>
+      <td>{el?.email}</td>
+      <td>{el?.Status}</td>
       <td onClick={() => setShow(true)}><button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button></td>
       
       <td 

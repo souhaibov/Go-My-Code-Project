@@ -14,25 +14,22 @@ const Events = () => {
           <br/>
           <div className="yawm-maftouh">
             <div>
-              <img
-                src={el.tof}
-                alt="pic"
-              ></img>
+            {el?.tof?.map((tofa,i)=><img key={i} src={tofa?.url} alt='' />)}
             </div>
-        {/* ♜ */}
+       
           </div>
           <div className="descriptions">
-          <h2>♔ 𝓣𝓲𝓽𝓵𝓮 : {el.Title} </h2>
+          <h2>♔ 𝓣𝓲𝓽𝓵𝓮 : {el?.Title} </h2>
             
             <br />
             <br />
-            <h2>♕  𝓟𝓵𝓪𝓬𝓮 : {el.place} </h2>
+            <h2>♕  𝓟𝓵𝓪𝓬𝓮 : {el?.place} </h2>
             <br />
             <br />
-            <h2>♘   𝓓𝓪𝓽𝓮 :  {el.Date} </h2>
+            <h2>♘   𝓓𝓪𝓽𝓮 :  {el?.Date} </h2>
             <br />
             <br />
-            <h2>•• 𝐝𝑒s¢г𝕚𝓅𝓽𝒾𝑜𝓷 •• : {el.Description}</h2>
+            <h2>•• 𝐝𝑒s¢г𝕚𝓅𝓽𝒾𝑜𝓷 •• : {el?.Description}</h2>
             <br />
           </div>
         </div>

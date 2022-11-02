@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { postEvent } from '../../Redux/userSlice/eventSlice'
+// import AddFiles from '../uploadImgEvent'
 import EventCard from './EventCard'
 import "./M_event.css"
 
@@ -12,7 +13,7 @@ const M_event = ({ping,setPing}) => {
 // initialisation of the hook of adding a new event
   const [event, setEvent] = useState({
     Title: "",
-    tof: "",
+    tof: [],
     place: "",
     Date: "",
     Description: "",
@@ -41,13 +42,7 @@ const M_event = ({ping,setPing}) => {
                 }
               />
               
-              <input
-                type="text"
-                placeholder="Picture"
-                onChange={(e) =>
-                  setEvent({ ...event, tof: e.target.value })
-                }
-              />
+             {/* <AddFiles setEvent={setEvent} Event={Event} /> */}
               <input
                 type="text"
                 placeholder="the Workspace"
@@ -101,7 +96,6 @@ const M_event = ({ping,setPing}) => {
 
 {data?.map((el,i) => (<EventCard key={i} el={el} ping={ping} setPing={setPing}/>))}
 
-{/* <tr><td>{el.Title}</td><td>{el.tof}</td><td>{el.place}</td><td>{el.Date}</td><td>{el.Description}</td><td>update</td><td>delete</td></tr>)} */}
 
 </table>
         </div>

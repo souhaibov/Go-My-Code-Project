@@ -110,7 +110,6 @@ function AddFiles( {setActivity,activity}) {
             <progress id="progress-bar" value="0" max="100"></progress>
           </div>
       
-    {/* <img src={upload[0]} alt=""/> */}
     </div>
   );
 }

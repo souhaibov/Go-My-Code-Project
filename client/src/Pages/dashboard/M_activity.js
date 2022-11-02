@@ -57,7 +57,8 @@ const M_activity = ({ping,setPing}) => {
                <br />
                <button
               onClick={() => {
-                dispatch(postActivity(activity));setShow(false)
+                dispatch(postActivity(activity));
+                setShow(false)
                 setPing(!ping)}}>
               Submit
             </button>
