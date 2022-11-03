@@ -1,8 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import '../Style/Navbar.css'
 
 const Navbar = () => {
+  const user = useSelector((store) => store.user?.user);
+  console.log(user)
   const isAuth = localStorage.getItem('token')
   return (
     <div className='Navigation'>
@@ -20,7 +23,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to='/ContactUs'><li>Contact us</li></Link>
-        {isAuth &&  <Link to='/dashboard/user'> <li>Dashboard</li></Link>}
+        { user?.user.Status=="admin"?<Link to='/dashboard/user'> <li>Dashboard</li></Link>: null}
         {/* <Link to='/ContactUs'><li>Contact us</li></Link> */}
         {isAuth ?
           <button className='botton_login' onClick={() => {

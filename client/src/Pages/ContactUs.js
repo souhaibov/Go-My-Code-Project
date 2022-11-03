@@ -9,15 +9,15 @@ const ContactUs = () => {
 
       <h1 style={{fontSize: '40px',textShadow: 'none', color: 'DarkGreen'}}>Get in Touch</h1>
       <br/><br/>
-      <input placeholder='Name *'/>
+      <input placeholder=' Name *'/>
       <br/><br/>
-      <input placeholder='E.mail *'/>
+      <input placeholder=' E.mail *'/>
       <br/><br/>
-      <input placeholder='Location'/>
+      <input placeholder=' Location'/>
       <br/><br/>
-      <input placeholder='Phone Number'/>
+      <input placeholder=' Phone Number'/>
       <br/><br/>
-      <input style={{height:'150px'}} placeholder='Message *'/>
+      <input style={{height:'150px'}} placeholder=' Message *'/>
       <br/><br/><br/>
       <button className="submit" >Submit</button>
       

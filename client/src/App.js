@@ -17,7 +17,7 @@ import Register from "./Pages/Register";
 import {useDispatch} from "react-redux";
 import { getUser, userCurrent } from "./Redux/userSlice/userSlice";
 import Dashboard from "./Pages/Dashboard";
-import PrivateRoute from "./route/PrivateRoute";
+// import PrivateRoute from "./route/PrivateRoute";
 import M_event from "./Pages/dashboard/M_event";
 import M_activity from "./Pages/dashboard/M_activity";
 import M_user from "./Pages/dashboard/M_user";
@@ -26,6 +26,8 @@ import { getActivity } from "./Redux/userSlice/activitySlice";
 import Activities from "./Pages/Activities";
 import StudentsRoute from "./route/StudentsRoutes";
 import AdminRoute from "./route/AdminRoutes";
+// import { Switch } from "@material-ui/core";
+import SwitchRoutes from "./route/SwitchRoutes";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -78,6 +80,9 @@ function App() {
 
            <Route element={<StudentsRoute/>}>
 
+           </Route>
+           <Route element={<SwitchRoutes/>}>
+                <Route path="/switch" element={<Login/>} />
            </Route>
 
           <Route path="/Login" element={<Login />} />

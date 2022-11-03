@@ -111,6 +111,7 @@ export const userSlice = createSlice({
         state.status = "successful";
         state.user = action.payload.data.user;
         localStorage.setItem("token", action.payload.data.token);
+        
     },
     [userLogin.rejected]: (state)=> {
         state.status = "failed";

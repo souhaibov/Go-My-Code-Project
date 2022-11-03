@@ -10,6 +10,7 @@ Age:{type:Number },
 Poster:[{url:String }],
 Status:{type:String ,default:"user"},
 
+
 })
 
 module.exports=mongoose.model('User', UserSchema)

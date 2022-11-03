@@ -12,7 +12,7 @@ const Students = () => {
     <div className='card-student'>
         {Student?.map((el) => (
         <div className='student'>
-          <div><img src={el.Poster} alt={el.first_name}/></div>
+          <div><img src={el?.Poster[0].url} alt={el.first_name}/></div>
           <br/>
           <div className='st-description'>
             <h2 style={{color: 'green4'}}>First Name: {el?.first_name}</h2>

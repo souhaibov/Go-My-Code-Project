@@ -42,7 +42,7 @@ const Login = () => {
         onClick={() => {
           dispatch(userLogin(login));
           setTimeout(() => {
-            navigate("/Dashboard");
+            navigate("/switch");
             window.location.reload();
           }, 1000);
           //
