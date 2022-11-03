@@ -27,7 +27,8 @@ justify-content: space-around;
     /*border-style: dashed;
     */
     border-radius: 4%;
-    opacity: 75%;
+    /* padding: 80px 80px; */
+    opacity: 85%;
     color: rgb(19, 87, 70);
     text-align: justify;
     text-justify: inter-word;
@@ -35,7 +36,7 @@ justify-content: space-around;
     text-shadow: black 0.045em 0.025em 0.025em;
     line-height: 50px;
     width: 90%;
-    background-color:rgb(166, 214, 149);
+    background-color:rgb(179, 243, 193);
    
 }
 .description_club h3{
@@ -50,12 +51,29 @@ text-align: center;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.languages{
+.langages{
     box-shadow: 0px 1px 5px 19px rgba(19,115,52,0.27);
     -webkit-box-shadow: 0px 1px 5px 19px rgba(19,115,52,0.27);
-    -moz-box-shadow: 0px 1px 5px 19px rgba(19,115,52,0.27);    display: flex;
+    -moz-box-shadow: 0px 1px 5px 19px rgba(19,115,52,0.27);
+    display: flex;
     cursor: pointer;
-  padding: 20px 20px;
-  margin: 20px 20px;
+    border-radius:5% ;
+    padding: 20px 20px;
+    margin: 20px 20px;
     justify-content: space-around;
+    -webkit-border-radius:5% ;
+    -moz-border-radius:5% ;
+    -ms-border-radius:5% ;
+    -o-border-radius:5% ;
+}
+.langages p{
+    text-align: center;
+  
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
 }

@@ -37,7 +37,7 @@ function App() {
             <Popup >
               <h2 style={{color:'green',textAlign:'center'}}>Local Jeunes sans frantiéres</h2>
               <div >
-            <img style={{width:'265px',height:'200px'}} src='club.jpg' alt="Club d'Echecs de Métouia"/>
+            <img style={{width:'265px',height:'200px'}} src='chabab.jpg' alt="Club d'Echecs de Métouia"/>
               </div>
             </Popup>
         </Marker>
@@ -45,7 +45,7 @@ function App() {
             <Popup >
               <h2 style={{color:'green',textAlign:'center'}}>Local Ecole des Elite à Ghannouch</h2>
               <div >
-            <img style={{width:'265px',height:'200px'}} src='club.jpg' alt="Club d'Echecs de Métouia"/>
+            <img style={{width:'265px',height:'200px'}} src='elite_ghanouch.jpg' alt="Club d'Echecs de Ghannouch"/>
               </div>
             </Popup>
         </Marker>

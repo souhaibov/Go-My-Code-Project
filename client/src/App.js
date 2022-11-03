@@ -3,12 +3,10 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Activities from "./Pages/Activities";
 import Events from "./Pages/Events";
 import ContactUs from "./Pages/ContactUs";
 import About from "./Pages/About";
 import Login from "./Pages/Login";
-import DataStudent from "./Components/DataStudents";
 import { useEffect, useState } from "react";
 import Students from "./Pages/Students";
 import Instructors from "./Pages/Instructors";
@@ -17,7 +15,7 @@ import Managing from "./Pages/Managing";
 import DataManage from "./Components/DataManaging";
 import Register from "./Pages/Register";
 import {useDispatch} from "react-redux";
-import { userCurrent } from "./Redux/userSlice/userSlice";
+import { getUser, userCurrent } from "./Redux/userSlice/userSlice";
 import Dashboard from "./Pages/Dashboard";
 import PrivateRoute from "./route/PrivateRoute";
 import M_event from "./Pages/dashboard/M_event";
@@ -25,6 +23,9 @@ import M_activity from "./Pages/dashboard/M_activity";
 import M_user from "./Pages/dashboard/M_user";
 import { getEvent } from "./Redux/userSlice/eventSlice";
 import { getActivity } from "./Redux/userSlice/activitySlice";
+import Activities from "./Pages/Activities";
+import StudentsRoute from "./route/StudentsRoutes";
+import AdminRoute from "./route/AdminRoutes";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -33,13 +34,13 @@ function App() {
     dispatch(userCurrent());
     dispatch(getEvent());
     dispatch(getActivity())
+    dispatch(getUser())
 
   }, [dispatch]);
   //   return () => {
 
   //   }
 
-  const [Datastudent /*setStudent*/] = useState(DataStudent);
   return (
     <div className="App">
       <Navbar />
@@ -55,11 +56,7 @@ function App() {
           <Route
             path="/Students"
             element={
-              <Students
-              DataStudent={
-                  Datastudent
-                }
-              />
+              <Students/>
             }
           />
           <Route
@@ -71,12 +68,16 @@ function App() {
             element={<Managing DataManage={DataManage} />}
           />
 
-           <Route element={<PrivateRoute/>}>
+           <Route element={<AdminRoute/>}>
             <Route path="/Dashboard" element={<Dashboard ping={ping}/>}>
                  <Route path="/Dashboard/event" element={<M_event ping={ping} setPing={setPing} />} />
                  <Route path="/Dashboard/activity" element={<M_activity ping={ping} setPing={setPing}/>} />
                  <Route path="/Dashboard/user" element={<M_user ping={ping} setPing={setPing}/>} />
             </Route>
+           </Route>
+
+           <Route element={<StudentsRoute/>}>
+
            </Route>
 
           <Route path="/Login" element={<Login />} />

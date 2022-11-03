@@ -15,7 +15,7 @@ const Home = () => {
       <div className='description_club'>
 
         <div className='description_fr'>
-          <div className='languages'>
+          <div className='langages'>
             <p onClick={()=>setIndex(0)}> Français </p>
             <p onClick={()=>setIndex(1)}> English </p>
             <p onClick={()=>setIndex(2)}> العربية </p>

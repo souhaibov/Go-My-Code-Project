@@ -1,18 +1,23 @@
 import React from 'react'
-import DataStudent from '../Components/DataStudents'
+import { useSelector } from 'react-redux';
 import '../Style/Student.css'
 
 const Students = () => {
+  const users = useSelector((store) => store.user?.users);
+  console.log(users)
+  const Student = users.filter((e) => e.Status === 'Student');
+
   return (
     <div>
     <div className='card-student'>
-        {DataStudent?.map((el) => (
+        {Student?.map((el) => (
         <div className='student'>
-          <div><img src="https://res.cloudinary.com/dh5a6dj9c/image/upload/v1666870571/students/Oubey_scdrvl.jpg" alt="oubey"/></div>
+          <div><img src={el.Poster} alt={el.first_name}/></div>
           <br/>
           <div className='st-description'>
-            <h2 style={{color: 'green4'}}>Name: {el.name}</h2>
-            <h2 style={{color: 'ForestGreen'}}>Age: {el.age}</h2>
+            <h2 style={{color: 'green4'}}>First Name: {el?.first_name}</h2>
+            <h2 style={{color: 'ForestGreen'}}>Last Name: {el?.last_name}</h2>
+            <h2 style={{color: 'green4'}}>Age: {el?.Age}</h2>
         </div>
     </div>
       ))}

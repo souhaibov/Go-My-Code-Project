@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userRegister } from "../../Redux/userSlice/userSlice";
+import AddFiles from "../UploadimgUser";
 import "./M_user.css";
 import UserCard from "./UserCard";
 
@@ -16,7 +17,7 @@ const M_user = ({ping,setPing}) => {
     email: "",
     password: "",
     Age: "",
-    Poster: "",
+    Poster: [],
     Status: "",
   });
 
@@ -31,7 +32,7 @@ const M_user = ({ping,setPing}) => {
       <br />
       {show ? (
         <div>
-          <div id="form" class="topBefore">
+          <div id="form" className="topBefore">
             <div className="info">
               <input
                 type="text"
@@ -71,20 +72,9 @@ const M_user = ({ping,setPing}) => {
                   setRegister({ ...register, password: e.target.value })
                 }
               />
-              <input
-                type="text"
-                placeholder="isAdmin"
-                onChange={(e) =>
-                  setRegister({ ...register, isAdmin: e.target.value })
-                }
-              />
-              <input
-                type="text"
-                placeholder="Poster"
-                onChange={(e) =>
-                  setRegister({ ...register, Poster: e.target.value })
-                }
-              />
+             
+             <AddFiles setUser={setRegister} user={register} />
+
               <input
                 type="text"
                 placeholder="Status"
@@ -105,10 +95,9 @@ const M_user = ({ping,setPing}) => {
 
             <button
               onClick={() => {
-                dispatch(userRegister(register));
-                setPing(!ping);
+                dispatch(userRegister(register))
+                setPing(!ping)
                 setShow(false)
-                
               }}
             >
               Submit
@@ -120,8 +109,9 @@ const M_user = ({ping,setPing}) => {
       <div className="user_list">
         <table width="100%">
           <tr>
-            <th>Name</th>
+            <th>First Name</th>
             <th>Last Name</th>
+            <th>Image</th>
             <th>Phone number</th>
             <th>Email</th>
             <th>Status</th>

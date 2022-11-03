@@ -15,8 +15,8 @@ const Activities = () => {
       </h1>
       <br/>
             <div className='card-Activities'>
-        {activity?.map((el) => (
-        <div className='Activities'>
+        {activity?.map((el,i) => (
+        <div key={i} className='Activities'>
           <br/><br/>
            <h2 style={{fontSize:"36px",color: 'darkgreen'}}>【﻿Work Space】: {el?.place}</h2>
            <br/>

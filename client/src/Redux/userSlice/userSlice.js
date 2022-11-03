@@ -6,7 +6,7 @@ import axios from 'axios'
 export const userRegister = createAsyncThunk("user/register",async (user) => {
     try {
         let response = await axios.post("http://localhost:5000/user/register", user);
-    return await response;
+    return await response.data;
     
     } catch (error) {
         console.log(error)
@@ -97,8 +97,6 @@ export const userSlice = createSlice({
     },
     [userRegister.fulfilled]: (state,action)=> {
         state.status = "successful";
-        state.user = action.payload.data.newUserToken;
-        localStorage.setItem("token", action.payload.data.token);
     },
     [userRegister.rejected]: (state)=> {
         state.status = "failed";

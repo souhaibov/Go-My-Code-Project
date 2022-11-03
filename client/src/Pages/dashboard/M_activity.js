@@ -36,14 +36,7 @@ const M_activity = ({ping,setPing}) => {
                   setActivity({ ...activity, NumberOfStudents: e.target.value })
                 }
               />
-              {/* <input
-                type="text"
-                placeholder="picture of the Activity"
-                onChange={(e) =>
-                  setActivity({ ...activity, tof: e.target.value })
-                }
-              /> */}
-
+           
                 <AddFiles setActivity={setActivity} activity={activity} />
 
               <input
@@ -79,7 +72,8 @@ const M_activity = ({ping,setPing}) => {
                 </tr>
                 
 
-{data?.map((el,i)=>(<ActivityCard key={i} el={el} ping={ping} setPing={setPing}/>))}
+{data?.map((el,i)=>(
+<ActivityCard key={i} el={el} ping={ping} setPing={setPing}/>))}
 
 </table>
         </div>
