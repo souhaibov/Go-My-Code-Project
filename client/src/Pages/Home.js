@@ -1,4 +1,6 @@
 import React from 'react'
+import ChessGame from '../ChessGame/Chess'
+import ChessGame1 from '../ChessGame/Chess1'
 import '../Style/home.css'
 
 const Home = () => {
@@ -11,24 +13,23 @@ const Home = () => {
       <br />
       <h1>Chess Club of Métouia</h1>
 
-      <img src="logo.png" alt="logo" /><br /><br />
-      {/* <div className='description_club'>
+      <img src="logo.png" alt="logo" />
+      <br />
+      <h2>Let's start by playing a game</h2>
+     <ChessGame1/>
+     <br />
 
-        <div className='description_fr'>
-          <div className='langages'>
-            <p onClick={()=>setIndex(0)}> Français </p>
-            <p onClick={()=>setIndex(1)}> English </p>
-            <p onClick={()=>setIndex(2)}> العربية </p>
-          </div>
-          <br/>
-          <h3>{info[index].title}</h3><br />
-          <p>{info[index].description}</p>
-        </div>
-
-      </div><br /><br /> */}
+     {/* <ChessGame/> */}
+<br /><br />
       <div className='team_pic'>
+        
         <img style={{ width: "47%", height: "100%" }} src="team1.jpg" alt="team1" />
+        <h2 className='team2012'>Team 2012</h2>
+        
+        
         <img style={{ width: "47%", height: "100%" }} src="team2.jpg" alt="team2" />
+        <h2 className='team2022'>Team 2022</h2>
+       
       </div><br /><br />
     </div>
   )
