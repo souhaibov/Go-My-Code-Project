@@ -56,6 +56,7 @@ const Login = () => {
         {" "}
         <button className="submit_signup">Register</button>
       </Link>
+     
     </div>
   );
 };

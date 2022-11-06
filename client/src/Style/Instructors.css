@@ -7,18 +7,30 @@
     
 }
 .instructor{
-    /*border-style: dashed;
-    */background-color: rgb(192, 235, 199);
+    /*border-style: dashed;*/
+    background-color: rgb(189, 236, 206);
+    border-radius:35px ;
+    -webkit-border-radius:35px ;
+    -moz-border-radius:35px ;
+    -ms-border-radius:35px ;
+    -o-border-radius:35px ;
     margin: 40px 40px;
     align-items: center;
     display: flex;
     /* border-radius:4% ; */
     justify-content: space-between;
+    box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 10px 9px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+ 
+
+
     }
 .description{
     margin: 40px 40px;
     width: 70vw;
     font-size: 22px;
+    
 }
 .instructor img{
     width: 30vw;
@@ -42,5 +54,6 @@
 font-family: Arial, Helvetica, sans-serif;
 /* text-align: justify;
 text-justify: distribute; */
-line-height: 33px;
+line-height: 53px;
+font-size: 30px;
 }

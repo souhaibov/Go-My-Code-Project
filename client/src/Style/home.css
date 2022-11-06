@@ -3,6 +3,7 @@
     width: 30vw;
     height: 60vh;
   opacity: 70%;
+  
   }
   .home{
     width: 100%;
@@ -16,6 +17,7 @@
     opacity: 80%;
     display: inline-block;
     position: relative;
+    
   }
   .team_pic .team2012{
   font-size: 66px;
@@ -30,6 +32,10 @@
     color: rgb(22, 118, 64);
     width: 30%;
     text-shadow: 2px 2px #ff0000;
+    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    
 }
 
 .team_pic .team2022{
@@ -44,7 +50,11 @@
     top: 60%;
     color: rgb(22, 118, 64);
     width: 30%;
-    text-shadow: 2px 2px #ff0000
+    text-shadow: 2px 2px #ff0000;
+    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+
 }
   .description_club{
     
@@ -67,7 +77,7 @@ justify-content: space-around;
     text-shadow: black 0.045em 0.025em 0.025em;
     line-height: 50px;
     width: 90%;
-    background-color:rgb(179, 243, 193);
+    background-color:rgb(204, 236, 224);
    
 }
 .description_club h3{
@@ -81,6 +91,10 @@ text-align: center;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+
 }
 .langages{
   

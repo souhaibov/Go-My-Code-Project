@@ -18,9 +18,11 @@ const Activities = () => {
         {activity?.map((el,i) => (
         <div key={i} className='Activities'>
           <br/><br/>
+          <div className='titles'>
            <h2 style={{fontSize:"36px",color: 'darkgreen'}}>【﻿Work Space】: {el?.place}</h2>
            <br/>
            <h2 style={{color: 'darkgreen',fontSize:"32px"}}>𝓝𝓾𝓶𝓫𝓮𝓻 𝓞𝓯 𝓢𝓽𝓾𝓭𝓮𝓷𝓽𝓼 : {el?.NumberOfStudents}</h2>
+           </div>
            <br/>
            <div className='list_tof_act'>
            {el?.tof?.map((tofa,i)=><img key={i} src={tofa?.url} alt='' />)}

@@ -15,9 +15,9 @@ const Instructors = () => {
          
           <div className='description'>
         
-          <h1>{el.name}</h1>
+          <h1 style={{color:"rgb(189, 236, 206)"}}>{el.name}</h1>
           <br/><br/>
-          <h2>{el.Statue}</h2>
+          <h2 style={{color:"green"}}>{el.Statue}</h2>
           <br/><br/>
           <p>{el.description}</p>
           <br/>
