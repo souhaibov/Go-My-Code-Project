@@ -1,74 +1,60 @@
-import React from 'react'
-
-import {useState} from 'react'
+import { useState } from 'react';
 import {Chessboard} from 'react-chessboard'
-import {Chess} from 'chess.js'
-import "./Chess.css"
+import * as ChessJS from 'chess.js'
+              
+function App() {
+  const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess; // For VS code intellisence to work
+  const [game, setGame] = useState(new Chess());
+//Let's perform a function on the game state 
+ 
+function safeGameMutate(modify){
+  setGame((g)=>{
+    const update = {...g}
+    modify(update)
+    return update;
+  })
+}
+//Movement of computer
+function makeRandomMove(){
+  const possibleMove = game.moves();
 
-const ChessGame = () => {
+  //exit if the game is over 
 
-    const [game, setGame] = useState(new Chess());
+  if(game.game_over() || game.in_draw() || possibleMove.length === 0) return;
+  //select random move
 
-    //Let's perform a function on the game state 
-     
-    function safeGameMutate(modify){
-      setGame((g)=>{
-        const update = {...g}
-        modify(update)
-        return update;
-      })
-    }
+  const randomIndex = Math.floor(Math.random() * possibleMove.length);
+ //play random move 
+ safeGameMutate((game)=>{
+  game.move(possibleMove[randomIndex]);
+ })
+}
 
-    //Movement of computer
-
-    function makeRandomMove(){
-      const possibleMove = game.moves();
-    
-      //exit if the game is over 
-    
-      if(game?.game_over() || game?.in_draw() || possibleMove.length === 0) return;
-     
-    //select random move
-    
-      const randomIndex = Math.floor(Math.random() * possibleMove.length);
-
-     //play random move 
-
-     safeGameMutate((game)=>{
-      game.move(possibleMove[randomIndex]);
-     })
-    }
-    
-    //Perform an action when a piece is droped by a user
-     
-    function onDrop(source,target){
-      let move = null;
-      safeGameMutate((game)=>{
-          move = game.move({
-          from:source,
-          to: target,
-          promotion:'q'
-        })
+//Perform an action when a piece is droped by a user
+ 
+function onDrop(source,target){
+  let move = null;
+  safeGameMutate((game)=>{
+    move = game.move({
+      from:source,
+      to: target,
+      promotion:'q'
     })
+})
+ //illegal move 
+ if(move== null) return false
+ //valid move 
+ setTimeout(makeRandomMove, 200);
+ return true;
+}
+  return (
+    <div className="app">
+      <Chessboard 
+      position={game.fen()}
+      onPieceDrop ={onDrop}
+      />
+    </div>
+  );
+}
 
-     // illegal move 
-
-     if(move== null) return false
-
-     // valid move 
-
-     setTimeout(makeRandomMove, 200);
-     return true;
-    }
-      return (
-        <div className="chess_board">
-          <Chessboard 
-          position={game?.fen()}
-          onPieceDrop ={onDrop}
-          />
-        </div>
-      );
-    }
-export default ChessGame
-
-
+export default App;

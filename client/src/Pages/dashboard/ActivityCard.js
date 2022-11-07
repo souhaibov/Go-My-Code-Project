@@ -21,7 +21,9 @@ const ActivityCard = ({ el ,ping ,setPing}) => {
       <td>
         <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.place} name="place" />
       </td>
-      
+      <td>
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el.classDate} name="classDate" />
+      </td>
       <td onClick={() => {dispatch(updateActivity({ id: el._id, Activity: Activity }));setShow(false);setPing(!ping)}}>
       <button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button>
       </td>
@@ -32,6 +34,7 @@ const ActivityCard = ({ el ,ping ,setPing}) => {
       <td>{el?.NumberOfStudents}</td>
       <td>{el?.tof?.map((tofa,i)=><img key={i} style={{width:"60px", height:"60px"}} src={tofa?.url} alt='' />)}</td>
       <td>{el?.place}</td>
+      <td>{el?.classDate}</td>
       <td onClick={() => setShow(true)}><button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button></td>
       
       <td 

@@ -14,6 +14,7 @@ const M_activity = ({ping,setPing}) => {
     NumberOfStudents: "",
     tof: [],
     place: "",
+    classDate:"",
   });
 
   const dispatch = useDispatch();
@@ -37,7 +38,6 @@ const M_activity = ({ping,setPing}) => {
                 }
               />
            
-                <AddFiles setActivity={setActivity} activity={activity} />
 
               <input
                 type="text"
@@ -46,8 +46,17 @@ const M_activity = ({ping,setPing}) => {
                   setActivity({ ...activity, place: e.target.value })
                 }
               />
+              <input
+                type="text"
+                placeholder="the date of the class lesson"
+                onChange={(e) =>
+                  setActivity({ ...activity, classDate: e.target.value })
+                }
+              />
+                              <AddFiles setActivity={setActivity} activity={activity} />
+
               </div>
-               <br />
+              
                <button
               onClick={() => {
                 dispatch(postActivity(activity));
@@ -67,6 +76,7 @@ const M_activity = ({ping,setPing}) => {
                   <th >Number of Students</th>
                   <th >Picture</th>
                   <th >Workspace</th>
+                  <th >Date of the Class</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
