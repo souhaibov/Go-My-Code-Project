@@ -93,7 +93,7 @@ const M_user = ({ping,setPing}) => {
               />
             </div>
 
-            <button
+            <button className={`${register.Poster.length===0 || register.first_name==="" || register.last_name==="" || register.email==="" || register.password==="" ? "disabled_button" : "" }`} disabled={register.Poster.length===0 || register.first_name==="" || register.last_name==="" || register.email==="" || register.password===""}
               onClick={() => {
                 dispatch(userRegister(register))
                 setPing(!ping)

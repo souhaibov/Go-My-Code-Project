@@ -23,8 +23,10 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to='/ContactUs'><li>Contact us</li></Link>
-        { user?.user.Status=="admin"?<Link to='/dashboard/user'> <li>Dashboard</li></Link>: null}
-        {/* <Link to='/ContactUs'><li>Contact us</li></Link> */}
+
+        { user?.user.Status==="Student" || user?.user.Status==="admin" ||user?.user.Status==="coach" ?<Link to='/StudentDash'> <li>Learning</li></Link>: null}
+
+        { user?.user.Status==="admin"?<Link to='/dashboard/user'> <li>Dashboard</li></Link>: null}
         {isAuth ?
           <button className='botton_login' onClick={() => {
             localStorage.removeItem('token')

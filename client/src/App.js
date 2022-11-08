@@ -28,6 +28,7 @@ import StudentsRoute from "./route/StudentsRoutes";
 import AdminRoute from "./route/AdminRoutes";
 // import { Switch } from "@material-ui/core";
 import SwitchRoutes from "./route/SwitchRoutes";
+import StudentDash from "./Pages/StudentDash";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -54,7 +55,7 @@ function App() {
           <Route path="/Events" element={<Events />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/About" element={<About />} />
-          
+          <Route path="/StudentDash" element={<StudentDash />} />
           <Route
             path="/Students"
             element={
@@ -79,7 +80,8 @@ function App() {
            </Route>
 
            <Route element={<StudentsRoute/>}>
-
+            <Route path="/Pages/StudentDash" element={<StudentDash ping={ping}/>}>
+            </Route>
            </Route>
            <Route element={<SwitchRoutes/>}>
                 <Route path="/switch" element={<Login/>} />

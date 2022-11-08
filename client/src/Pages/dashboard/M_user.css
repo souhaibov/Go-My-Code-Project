@@ -33,6 +33,10 @@ button{
     width: 200px;
     height: 40px;
 }
+.disabled_button{
+    background-color: rgb(147, 148, 148);
+    pointer-events: none ;
+}
 
 .info{
     display: flex;
