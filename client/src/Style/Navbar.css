@@ -65,10 +65,28 @@
 .botton_login{
     margin-left: 10px;
     border: 3px solid rgb(190, 189, 189);
-  width:120px ;
-  height:40px ;
-  font-size: 18px;
+  width:80px ;
+  height:30px ;
+  font-size: 16px;
   background-color: rgb(36, 58, 10);
   border-radius: 50px ;
   cursor: pointer;
+  color: rgb(208, 239, 226);
+}
+.botton_logout{
+    margin-left: 10px;
+    border: 3px solid rgb(190, 189, 189);
+  width:55px ;
+  height:25px ;
+  font-size: 13px;
+  background-color: rgb(36, 58, 10);
+  border-radius: 50px ;
+  cursor: pointer;
+  color: rgb(208, 239, 226);
+}
+.logout_profile {
+    background-color: rgb(68, 116, 98);
+    padding: 8px 10px;
+    color: rgb(208, 239, 226);
+   
 }

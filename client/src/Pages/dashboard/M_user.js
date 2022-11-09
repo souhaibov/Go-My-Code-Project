@@ -49,10 +49,11 @@ const M_user = ({ping,setPing}) => {
                 }
               />
               <input
-                type="tel"
+               type="number"
+               maxLength="14"
                 placeholder="phone number"
-                id="phone" 
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+               
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{3}"
                 onChange={(e) =>
                   setRegister({ ...register, phone_number: e.target.value })
                 }
@@ -66,7 +67,7 @@ const M_user = ({ping,setPing}) => {
                 }
               />
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 onChange={(e) =>
                   setRegister({ ...register, password: e.target.value })

@@ -5,7 +5,6 @@ import '../Style/Navbar.css'
 
 const Navbar = () => {
   const user = useSelector((store) => store.user?.user);
-  console.log(user)
   const isAuth = localStorage.getItem('token')
   return (
     <div className='Navigation'>
@@ -27,11 +26,16 @@ const Navbar = () => {
         { user?.user.Status==="Student" || user?.user.Status==="admin" ||user?.user.Status==="coach" ?<Link to='/StudentDash'> <li>Learning</li></Link>: null}
 
         { user?.user.Status==="admin"?<Link to='/dashboard/user'> <li>Dashboard</li></Link>: null}
+        
         {isAuth ?
-          <button className='botton_login' onClick={() => {
+        <div className='logout_profile'>
+          <h3 style={{fontSize:"16px"}}> Welcome {user?.user?.first_name} </h3>
+          <button className='botton_logout' onClick={() => {
             localStorage.removeItem('token')
             window.location.reload()
-          }}>Logout</button> : <div>
+          }}>Logout</button>
+          </div> : 
+          <div>
             <Link to='/Login'><button className='botton_login'><b>Login </b></button></Link>
             <Link to='/Register'><button className='botton_login'><b> Register</b></button></Link>
           </div>}

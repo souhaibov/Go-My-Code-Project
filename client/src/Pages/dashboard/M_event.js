@@ -68,7 +68,7 @@ const M_event = ({ping,setPing}) => {
               />
               </div>
 
-<button
+<button className={`${event.tof.length===0 || event.Title==="" || event.place==="" || event.Date==="" || event.Description==="" ? "disabled_button" : "" }`} disabled={event.tof.length===0 || event.Title==="" || event.place==="" || event.Date==="" || event.Description===""}
   onClick={() => {
     dispatch(postEvent(event));
     setShow(false);

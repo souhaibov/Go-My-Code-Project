@@ -57,7 +57,7 @@ const M_activity = ({ping,setPing}) => {
 
               </div>
               
-               <button
+               <button className={`${activity.tof.length===0 || activity.NumberOfStudents==="" || activity.place==="" || activity.classDate==="" ? "disabled_button" : "" }`} disabled={activity.tof.length===0 || activity.NumberOfStudents==="" || activity.place==="" || activity.classDate===""}
               onClick={() => {
                 dispatch(postActivity(activity));
                 setShow(false)

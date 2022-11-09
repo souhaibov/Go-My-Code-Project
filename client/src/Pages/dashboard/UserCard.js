@@ -22,7 +22,7 @@ const UserCard = ({ el , ping , setPing }) => {
         <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Poster} name="tof" />
       </td>
       <td>
-        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" defaultValue={el?.phone_number}/>
+        <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="number" maxLength="14" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" defaultValue={el?.phone_number}/>
       </td>
       <td>
         <input style={{height:"35px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.email} name="email" />

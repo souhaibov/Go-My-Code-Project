@@ -13,8 +13,10 @@
     width: 27vw;
     height: 60vh;
     margin: 30px 30px ;
-    box-shadow:  rgba(170, 125, 177, 0.56) 0px 22px 70px 4px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding-top: 20px;
+    box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 5px 9px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+        padding-top: 20px;
     border-radius: 30%;
     -webkit-border-radius: 30%;
     -moz-border-radius: 30%;

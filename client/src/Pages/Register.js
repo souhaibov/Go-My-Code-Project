@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { userRegister } from "../Redux/userSlice/userSlice";
 
+
 const Register = () => {
   const [register, setRegister] = useState({
     first_name: "",
@@ -19,7 +20,7 @@ const Register = () => {
       <img src="logo.png" alt="logo" />
       <br />
       <br />
-      <h3>First Name:</h3>
+      <h3>First Name* :</h3>
 
       <input
         placeholder="Enter your first name"
@@ -29,7 +30,7 @@ const Register = () => {
       />
       <br />
       <br />
-      <h3>Last Name:</h3>
+      <h3>Last Name* :</h3>
 
       <input
         placeholder="Enter your last name"
@@ -39,9 +40,11 @@ const Register = () => {
       />
       <br />
       <br />
-      <h3>Phone Number:</h3>
+      <h3>Phone Number :</h3>
 
       <input
+        type="number"
+        maxLength="14"
         placeholder="Enter your phone number"
         onChange={(e) =>
           setRegister({ ...register, phone_number: e.target.value })
@@ -49,7 +52,7 @@ const Register = () => {
       />
       <br />
       <br />
-      <h3>Email:</h3>
+      <h3>Email* :</h3>
 
       <input
         placeholder="Enter your E.mail"
@@ -57,9 +60,10 @@ const Register = () => {
       />
       <br />
       <br />
-      <h3>Password:</h3>
+      <h3>Password* :</h3>
 
       <input
+        type="password"
         placeholder="Enter your password"
         onChange={(e) => setRegister({ ...register, password: e.target.value })}
       />
