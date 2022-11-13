@@ -33,6 +33,7 @@ const Navbar = () => {
           <button className='botton_logout' onClick={() => {
             localStorage.removeItem('token')
             window.location.reload()
+           
           }}>Logout</button>
           </div> : 
           <div>

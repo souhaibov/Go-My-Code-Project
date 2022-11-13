@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../Style/home.css'
-import PhoneInputGfg from "./PhoneInput";
 // import Comments from "../Comments/Comments";
 // import AddFiles from "./UploadImg";
 // import NewComponent from "./Comment";
