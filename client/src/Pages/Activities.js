@@ -31,12 +31,8 @@ const Activities = () => {
            <div className='list_tof_act'>
            {el?.tof?.map((tofa,i)=><img key={i} src={tofa?.url} alt='' />)}
           <br/>
-          </div>
-          <div className='st-description'>
-           
-            
-            
-        </div>
+          </div><br/>
+         
     </div>
       ))}
     </div>

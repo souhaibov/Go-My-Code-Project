@@ -4,7 +4,8 @@
     background-color: rgb(3, 105, 76);
 }
 .navigation-ul{
-    
+   
+      
     margin-top: 0%;
     padding-top: 0%;
    
@@ -16,13 +17,18 @@
     justify-content: space-around;
     align-items: center;
 }
+a:hover {
+    background-color: rgb(93, 155, 132);
+  }
 .Navigation a {
     color: rgb(187, 217, 204);
     font: bold;
     font-size: 22px;
     text-decoration: none;
     position: relative;
-    text-shadow: 1px 1px #d9a7a7
+    text-shadow: 1px 1px #d9a7a7;
+    /* padding: 5px 5px ; */
+    /* margin: 5px 5px; */
 }
 
 .under-container{
@@ -45,12 +51,14 @@
     left: -10px;
     flex-direction:column;
     align-items: flex-start;
-    padding: 30px 20px 0 10px;
-    width: 14vw;
+    padding: 30px 20px 20px 2px;
+    width: 13vw;
    
 }
 .under-list li{
-    padding-bottom: 30px;
+    padding: 5px 0 5px 0;
+    margin: 5px 5px;
+
 }
 /* afficher underlist when we hover the li */
 
@@ -85,7 +93,7 @@
   color: rgb(208, 239, 226);
 }
 .logout_profile {
-    background-color: rgb(68, 116, 98);
+    background-color: rgb(93, 155, 132);
     padding: 8px 10px;
     color: rgb(208, 239, 226);
    

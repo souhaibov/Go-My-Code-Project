@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Style/Footer.css'
 
 const Footer = () => {
@@ -12,7 +13,8 @@ const Footer = () => {
       <div className='left_footer'>
       <br/><br/><br/>
         <h2>Keep in touch</h2><br/>
-        <p>Chess.metouia@gmail.com</p><br/>
+        <Link to="/ContactUs" ><p>Chess.metouia@gmail.com</p></Link>
+        <br/>
         <p>Phone number: +216 20 212 411</p>
         <p > +216 29 704 109</p>
       </div>
