@@ -5,7 +5,14 @@ const StudentDash = () => {
   return (
     <div>
         <br/>
-        <h1>Weekly Quiz</h1>
+        <div className='wisdom'>
+          <h2>¸,ø¤º°`°º¤ø,¸¸,ø¤º°    🎀   𝒞𝒽𝑒𝓈𝓈 𝒲𝒾𝓈𝒹๏𝓂   🎀    °º¤ø,¸¸,ø¤º°`°º¤ø,¸
+ </h2>
+ {/* 🍫😈  𝔠𝓗ｅ𝓢𝔰 ｗ𝐈𝓼𝓓๏Ｍ  🎉👣 */}
+ <br/>
+          <h2>Emmanuel Lasker : "When you see a good move, look for a better one!"</h2>
+        </div>
+        {/* <h1>Weekly Quiz</h1> */}
         <div className='quiz_position'>
             <div className='position'>
             <br/>

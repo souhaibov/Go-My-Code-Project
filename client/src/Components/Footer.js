@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='left_footer'>
       <br/><br/><br/>
         <h2>Keep in touch</h2><br/>
-        <Link to="/ContactUs" ><p>Chess.metouia@gmail.com</p></Link>
+        <Link to="/ContactUs" ><p style={{text_decoration: 'none'}}>Chess.metouia@gmail.com</p></Link>
         <br/>
         <p>Phone number: +216 20 212 411</p>
         <p > +216 29 704 109</p>

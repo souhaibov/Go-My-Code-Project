@@ -39,4 +39,21 @@
     font-size: 26px;
     color: rgb(19, 76, 34);
 }
-
+.wisdom{
+    margin: 20px 15%;
+    padding: 20px 20px;
+    width: 70%;
+    color: rgb(19, 76, 34);
+    font-size: 18px;
+    opacity: 80%;
+    /*border-style: dotted;
+    */background-color: rgb(191, 236, 219);
+    border-radius:10% ;
+    -webkit-border-radius:10% ;
+    -moz-border-radius:10% ;
+    -ms-border-radius:10% ;
+    -o-border-radius:10% ;
+    box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 10px 3px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+}

@@ -7,14 +7,18 @@
     
 }
 .left_side{
-    /* border-style: dashed; */
-    margin: 10vh auto 10vh 0; 
-   width: 40vw;
-   height: 100vh;
-   box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-   -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-   -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-
+    /*border-style: dashed;
+    */margin: 10vh auto 10vh 0;
+    
+    width: 40vw;
+    height: 100vh;
+    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .info_club{
     padding: 15px 5px 5px 5px;
