@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
 
-      <MapContainer style={{width:"40vw",height:"65vh"}} center={[33.948515, 10.036051]} zoom={13} >
+      <MapContainer style={{width:"50vw",height:"65vh"}} center={[33.948515, 10.036051]} zoom={13} >
         <TileLayer
           attribution=' '
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

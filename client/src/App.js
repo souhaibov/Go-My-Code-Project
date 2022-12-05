@@ -29,6 +29,7 @@ import AdminRoute from "./route/AdminRoutes";
 // import { Switch } from "@material-ui/core";
 import SwitchRoutes from "./route/SwitchRoutes";
 import StudentDash from "./Pages/StudentDash";
+import  ScrollUpButton from "react-scroll-up-button";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -90,6 +91,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>
+        <ScrollUpButton style={{width: 30, height:35}} ToggledStyle={{right: 50}}/>
       </div>
 
       <Footer />

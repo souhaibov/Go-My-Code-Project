@@ -10,24 +10,21 @@
     /*border-style: dashed;
     */margin: 10vh auto 10vh 0;
     
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
     box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    
 }
-.info_club{
+/* .info_club{
     padding: 15px 5px 5px 5px;
     display: flex;
     justify-content: space-between;
     opacity: 80%;
     width: auto;
     height: 35vh;
-    /* border-style: dotted; */
+    border-style: dotted;
     box-shadow: rgba(99, 1, 91, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-color: rgb(208, 239, 225);
     
@@ -43,7 +40,7 @@ height: 45px;
 .sous_info .position{
     width: 35px;
     height: 45px;
-}
+} */
 
 .formulaire{
      margin: 10vh auto 10vh auto; 
@@ -57,7 +54,7 @@ height: 45px;
     box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-
+opacity: 85%;
 }
 .formulaire button{
 
@@ -83,3 +80,39 @@ font-size: 18px;
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.rectangles{
+    /* border-style: dashed; */
+   
+    opacity: 85%;
+    display: flex;
+    justify-content: stretch;
+    height: 35vh;
+    background-color: rgb(203, 237, 216);
+}
+.rectangle{
+    /* border-style: double; */
+    /* margin: 10px 20px; */
+    padding-top: 20px;
+    width: 33.3%;
+    height: 100%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(50, 106, 35, 0.8) -6px -2px 16px 0px;
+
+}
+
+.rectangle img{
+width: 50px;
+height: 50px;
+margin: 0 40%;
+}
+.rectangle h3{
+    text-align: center;
+    color: rgb(5, 5, 24);
+}
+.rectangle h4{
+    text-align: center;
+    margin: 5px 0;
+    color: rgb(2, 51, 35);
+}
+
+

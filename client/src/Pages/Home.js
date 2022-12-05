@@ -1,5 +1,5 @@
 import React from 'react'
-import ChessGame from '../ChessGame/Chess'
+// import ChessGame from '../ChessGame/Chess'
 import ChessGame1 from '../ChessGame/Chess1'
 import '../Style/home.css'
 
