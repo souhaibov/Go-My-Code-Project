@@ -1,6 +1,7 @@
 import React from 'react'
 // import ChessGame from '../ChessGame/Chess'
 import ChessGame1 from '../ChessGame/Chess1'
+// import Chess_vs_pc from '../ChessGame/Chess'
 import '../Style/home.css'
 
 const Home = () => {
@@ -16,10 +17,11 @@ const Home = () => {
       <img src="logo.png" alt="logo" />
       <br />
       <h2>Let's start by playing a game</h2>
-     <ChessGame1/>
+     <ChessGame1/> 
+     {/* <Chess_vs_pc/> */}
      <br />
 
-     {/* <ChessGame/> */}
+    
 <br /><br />
       <div className='team_pic'>
         

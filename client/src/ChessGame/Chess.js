@@ -1,10 +1,11 @@
-import { useState } from 'react';
+
+import {useState } from 'react';
 import {Chessboard} from 'react-chessboard'
-import * as ChessJS from 'chess.js'
+import {Chess} from 'chess.js'
               
-function App() {
-  const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess; // For VS code intellisence to work
-  const [game, setGame] = useState(new Chess());
+function Chess_vs_pc() {
+  
+  const [game, setGame] = useState(new Chess())
 //Let's perform a function on the game state 
  
 function safeGameMutate(modify){
@@ -57,4 +58,4 @@ function onDrop(source,target){
   );
 }
 
-export default App;
+export default Chess_vs_pc;

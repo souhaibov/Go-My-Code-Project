@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+// import Comment from "../Comments/Comment";
+// import Comment1 from "../Comments/Comment1";
+// import Comment3 from "../Comments/Comment3";
 import '../Style/home.css'
 // import Comments from "../Comments/Comments";
 // import AddFiles from "./UploadImg";
@@ -18,7 +21,7 @@ const About = () => {
 
   return (
     <div>
-      <br/><br/><br/><br/>
+      
 <div className='description_club'>
 
 <div className='description_fr'>
@@ -29,22 +32,12 @@ const About = () => {
     <p onClick={()=>setIndex(3)}> Deutch </p>
   </div>
   <br/>
-  <h3>{info[index].title}</h3><br />
-  <p>{info[index].description}</p>
+  <h3>{info[index].title}</h3>
+  <p className="description-club">{info[index].description}</p>
 </div>
 
 </div>
-      {/* <br/><br/><AddFiles/> */}
-     {/* <input 
-            type="file"      
-            onChange={(e)=>setImageSelected(e.target.files[0])}/>
-     <br/><br/>
-     <button onClick={uploadImage}>Upload Image !</button>
-      */}
-<br/><br/><br/><br/>
-
-{/* <Comments currentUserId='1'/> */}
-
+      {/* <Comment/> */}
     </div>
   );
 };

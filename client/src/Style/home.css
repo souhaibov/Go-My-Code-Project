@@ -57,7 +57,7 @@
 
 }
   .description_club{
-    
+    margin: 70px 0;
 font-size: 26px;
 width: 100%;
 display: flex;
@@ -83,6 +83,7 @@ justify-content: space-around;
 .description_club h3{
 color: rgb(8, 65, 46);
 text-align: center;
+
 }
 .team_pic img{
     opacity: 100%;
@@ -114,7 +115,7 @@ text-align: center;
 }
 .langages p{
     text-align: center;
-  
+    /* border-style: dotted; */
     width: 150px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 30%;
@@ -122,6 +123,19 @@ text-align: center;
     -moz-border-radius: 30%;
     -ms-border-radius: 30%;
     -o-border-radius: 30%;
+}
+.langages p:hover{
+  background-color:rgba(19,115,52,0.27);
+
+}
+/* .langages p:focus-within{
+  background-color:rgba(19,115,52,0.27);
+
+} */
+
+.description-club{
+  
+  margin: 50px;
 }
 .home h2{
   font-size: 34px;
