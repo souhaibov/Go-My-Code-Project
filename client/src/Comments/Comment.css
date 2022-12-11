@@ -13,7 +13,7 @@
 }
 .comment-text{
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #084d31;
 }
@@ -33,7 +33,7 @@
     border-radius: 5px;
    border-style: none;
    cursor: pointer;
-   background: radial-gradient(rgb(32, 17, 31), rgb(7, 138, 134));
+   background: radial-gradient(rgb(134, 117, 207), rgb(5, 75, 72));
    color: rgb(248, 249, 251);
 }
 .comment-button:hover {

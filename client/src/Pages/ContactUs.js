@@ -38,8 +38,23 @@ const ContactUs = () => {
       <input style={{height:'150px'}} placeholder=' Message *' name="message" />
       <br/><br/><br/>
       <button className="submit" type="submit" value="Send">Submit</button>
+      
          </form>
       </div>
+
+
+      {/* <div class="wrapper">
+  <div class="link_wrapper">
+    <a href="#">Hover Me!</a>
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+      </svg>
+    </div>
+  </div> */}
+  
+{/* </div> */}
+
          
           <div className='left_side'>
           {/* <iframe title='map' style={{width:"40vw", height:"60vh", style:"border:0;", allowfullscreen:"", loading:"lazy", referrerpolicy:"no-referrer-when-downgrade"}} src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d200.90164671140815!2d9.997767981057914!3d33.96113915214634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2stn!4v1663637067416!5m2!1sfr!2stn"></iframe>   */}

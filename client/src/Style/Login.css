@@ -23,6 +23,17 @@ background-color: rgb(3, 135, 91);
 color: white;
 font-size: 18px;
 }
+
+.login-card button:hover{
+    /* transition: 1.5s ease-in-out; */
+    background: #0ebc14;
+  font-weight: bold;
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #114d2a;
+}
+
 .login-card input{
     height: 40px;
     width: 20vw;
