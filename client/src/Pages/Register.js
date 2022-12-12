@@ -55,6 +55,7 @@ const Register = () => {
       <h3>Email* :</h3>
 
       <input
+        type="email"
         placeholder="Enter your E.mail"
         onChange={(e) => setRegister({ ...register, email: e.target.value })}
       />
@@ -66,6 +67,14 @@ const Register = () => {
         type="password"
         placeholder="Enter your password"
         onChange={(e) => setRegister({ ...register, password: e.target.value })}
+      />
+      <br />
+      <br />
+      <h3>Password Again* :</h3>
+
+      <input
+        type="password"
+        placeholder="Enter your password"
       />
       <br />
 

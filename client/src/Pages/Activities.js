@@ -36,7 +36,7 @@ const Activities = () => {
               {el?.tof?.map((tofa, i) => (
                 <img key={i} src={tofa?.url} alt="" />
               ))}
-              <br />
+              
             </div>
            <div className="zone-comment">
             <Comment />

@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: -200px;
+    margin-top: -180px;
+/* border-style: dashed; */
 }
 .comment-flexbox{
     display: flex;
@@ -12,33 +13,35 @@
     align-items: flex-start;
 }
 .comment-text{
-    margin: 10px 0;
+    margin-bottom: 10px;
     font-size: 1.25rem;
     font-weight: 600;
     color: #084d31;
 }
 .input-box{
-    height: 75px;
+    height: 65px;
     width: 565px;
     background-color: azure;
     font-size: 18px;
 }
 .comment-button{
-    height: 40px;
-    width: 100px;
-    background-color: blue;
-    color: aliceblue;
+   
+   
     font-size: 1.05rem;
     margin-top: 10px;
-    border-radius: 5px;
-   border-style: none;
-   cursor: pointer;
-   background: radial-gradient(rgb(134, 117, 207), rgb(5, 75, 72));
-   color: rgb(248, 249, 251);
+    background: #0ebc14;
+    font-weight: bold;
+      width: 150px;
+      border: 3px solid #2ecc71;
+      background: transparent;
+      color: #114d2a;
+   
 }
 .comment-button:hover {
   
-    background: #0b6a44;
+    background: rgba(116,212,137,0.75);
+   
+      color:black;
    
 }
 
