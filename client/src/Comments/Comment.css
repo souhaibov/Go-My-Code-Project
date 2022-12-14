@@ -1,5 +1,6 @@
 .main-container{
     height: 100%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,7 +21,7 @@
 }
 .input-box{
     height: 65px;
-    width: 565px;
+    width: 465px;
     background-color: azure;
     font-size: 18px;
 }
@@ -28,7 +29,7 @@
    
    
     font-size: 1.05rem;
-    margin-top: 10px;
+    margin: 10px 0;
     background: #0ebc14;
     font-weight: bold;
       width: 150px;
@@ -48,7 +49,7 @@
 .comment-container{
     /* border-style: dashed; */
     height: 100%;
-    width: 565px;
+    width: 465px;
     background-color: azure;
     font-size: 18px;
     border-radius: 10px;

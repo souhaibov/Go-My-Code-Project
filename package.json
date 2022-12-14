@@ -31,11 +31,13 @@
     "passport-jwt": "^4.0.0",
     "react-bootstrap": "^2.7.0",
     "react-chessboard": "^1.2.5",
+    "react-password-checklist": "^1.4.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scroll-up-button": "^1.6.4",
     "react-scrollbar-js": "^1.0.1",
-    "simple-react-footer": "^1.0.2"
+    "simple-react-footer": "^1.0.2",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "concurrently": "^7.4.0",

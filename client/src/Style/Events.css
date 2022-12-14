@@ -9,31 +9,56 @@
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  opacity: 85%;
+  opacity: 90%;
 }
-img {
-  margin: 20px 20px;
-  width: 120vw;
-  height: 70vh;
+.card-events .yawm-maftouh img {
+  margin: 30px;
+  width: 17vw;
+  height: 33vh;
   border-radius: 20%;
   -webkit-border-radius: 20%;
   -moz-border-radius: 20%;
   -ms-border-radius: 20%;
   -o-border-radius: 20%;
 }
+.card-events .yawm-maftouh img {
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: #0a5a0a; /* the color */
+  
+  
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .3s;
+}
+.card-events .yawm-maftouh img:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+  width: 22vw;
+  height: 40vh;
+}
 .descriptions {
-
-
+/* display: flex; */
+/* justify-content: stretch; */
     padding: 30px 30px;
-  margin: 5.5%;
-  font-style: italic;
+  margin:3.5% 3%;
+  display: inline-block;
   /* border-style: dashed; */
   text-align: justify;
   justify-items: center;
   justify-content: center;
-  font-size: 18px;
-  color: rgb(46, 77, 61);
-  width: 190vw;
+  font-size: 14px;
+  
+  color: rgb(26, 27, 27);
+  width: 40%;
   height: 100%;
   text-shadow: 1px 1px #a9eaa9;
   box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
@@ -42,23 +67,40 @@ img {
 }
 .yawm-maftouh {
   margin: 50px 0 50px 50px;
+  border-radius: 20%;
   display: flex;
   justify-content: space-around;
-  padding: 30px 0;
+  padding: 10px;
   flex-wrap: wrap;
   /* border-style: dashed; */
-  width: 300%;
-  height: 90vh;
+  width: 300vw;
+  height: 100%;
   box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
   -webkit-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
   -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
   
 }
 .yawm-maftouh img {
-  width: 40%;
-  height: 35vh;
+  width: 30%;
+  height: 25vh;
   box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
   -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
   -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-  
+  border-radius: 20%;
+}
+.comment-event{
+  margin-top: 45%;
+ 
+  box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+  -webkit-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+
+}
+.info-events p{
+  font-size: 20px;
+  line-height: 2rem;
+}
+.info-events h2{
+  font-size: 20px;
+  line-height: 2.5rem;
 }

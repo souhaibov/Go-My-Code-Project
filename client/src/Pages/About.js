@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Carousels from "../Components/Carousels";
+// import Carousels from "../Components/Carousels";
+
 // import Comment from "../Comments/Comment";
 // import Comment1 from "../Comments/Comment1";
 // import Comment3 from "../Comments/Comment3";
@@ -39,7 +40,7 @@ const About = () => {
 
 </div>
       {/* <Comment/> */}
-      
+    
     </div>
   );
 };

@@ -30,18 +30,35 @@
     
 }
 .Activities img{
-    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    width: 20vw;
-   height: 35vh;
+  box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+  -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+  -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+  width: 20vw;
+  height: 35vh;
   margin: 20px;
+  border-radius:50% ;
+ 
+  --g: 4px;
+  --b: 12px;
+  --c: #041413;
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .2s;
+ 
 }
 
+
 .Activities img:hover{
-   
-    width: 35vw;
-   height: 50vh;
+    --_p: 75%;
+  filter: grayscale(0%);
+    width: 30vw;
+   height: 45vh;
  
 }
 .list-image{
