@@ -15,7 +15,7 @@
     box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
     -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    
+    /* border-radius:10% ; */
 }
 /* .info_club{
     padding: 15px 5px 5px 5px;
@@ -43,20 +43,32 @@ height: 45px;
 } */
 
 .formulaire{
-    /*position: relative;
-    */margin: 10vh auto 10vh auto;
-    padding: 10vh 10vh 10vh 10vh;
-    box-shadow: rgba(99, 1, 91, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background-color: rgb(203, 237, 216);
-    width: 80vh;
-    height: 100vh;
-    justify-content: center;
-    justify-items: center;
-    box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
-    opacity: 85%;
-   
+    background: linear-gradient(to right, 
+    
+    #A4BE7B, 
+    
+    #E5D9B6,  
+    #A4BE7B);
+
+   margin: 10vh auto 10vh auto;
+   padding: 10vh 10vh 10vh 10vh;
+   box-shadow: rgba(99, 1, 91, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   /* background-color: rgb(203, 237, 216); */
+   width: 80vh;
+   height: 100vh;
+   justify-content: center;
+   justify-items: center;
+   box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+   -webkit-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+   -moz-box-shadow: 0px -1px 0px 4px rgba(116,212,137,0.75);
+   opacity: 85%;
+   border-radius:2% ;
+   -webkit-border-radius:2% ;
+   -moz-border-radius:2% ;
+   -ms-border-radius:2% ;
+   -o-border-radius:2% ;
+
+  
 }
 .formulaire button{
  
@@ -118,6 +130,13 @@ height: 45px;
 .rectangle{
     /* border-style: double; */
     /* margin: 10px 20px; */
+    background: linear-gradient(to right, 
+    
+    #A4BE7B, 
+    
+    #E5D9B6,  
+    #A4BE7B);
+
     padding-top: 20px;
     width: 33.3%;
     height: 100%;
@@ -140,4 +159,15 @@ margin: 0 40%;
     color: rgb(2, 51, 35);
 }
 
-
+.write-me{
+    cursor: pointer;
+    text-decoration: none;
+}
+.write-me:hover{
+   color: rgb(17, 17, 17);
+   transform:scale(1.15);
+   -webkit-transform:scale(1.15);
+   -moz-transform:scale(1.15);
+   -ms-transform:scale(1.15);
+   -o-transform:scale(1.15);
+}

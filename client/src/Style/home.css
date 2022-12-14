@@ -77,8 +77,12 @@ justify-content: space-around;
     text-shadow: black 0.045em 0.025em 0.025em;
     line-height: 50px;
     width: 90%;
-    background-color:rgb(204, 236, 224);
-   
+    background: linear-gradient(to right, 
+    
+    #a2ce5a, 
+    
+    #cccec5,  
+    #a2ce5a);   
 }
 .description_club h3{
 color: rgb(8, 65, 46);

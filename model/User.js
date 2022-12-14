@@ -7,7 +7,7 @@ phone_number:{type:Number},
 email:{type:String ,required:true},
 password:{type:String ,required:true},
 Age:{type:Number },
-Poster:[{url:String }],
+Poster:[{url:String}],
 Status:{type:String ,default:"user"},
 
 

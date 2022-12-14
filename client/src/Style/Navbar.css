@@ -1,8 +1,12 @@
 .Navigation{
     z-index: 99999999999;
     width: 100%;
-    background-color: rgb(3, 105, 76);
-}
+    background: linear-gradient(to right, 
+    
+    #7db229, 
+    
+    #06621a,  
+    #A4BE7B);}
 .navigation-ul{
    
       
@@ -35,8 +39,8 @@
 .Navigation ul li:hover {
     background-position: 0;
     transition: all 0.3s ease-in-out;
-    -webkit-background-clip: text;
-   -webkit-text-fill-color: rgb(125, 227, 187);
+   
+   -webkit-text-fill-color: rgb(6, 58, 32);
     transition: all 0.3s ease-in-out;
   
 }
@@ -60,8 +64,12 @@
     z-index: 9999999999999;
     position: absolute;
     display: none;
-    background-color: rgb(3, 105, 76);
-    list-style: none;
+    background: linear-gradient(to bottom, 
+    
+    #06621a, 
+    
+    #577c1c,  
+    #7db229);    list-style: none;
     left: -10px;
     flex-direction:column;
     align-items: flex-start;
@@ -107,8 +115,9 @@
   color: rgb(208, 239, 226);
 }
 .logout_profile {
-    background-color: rgb(93, 155, 132);
+    background-color: #5f9703;
     padding: 8px 10px;
     color: rgb(208, 239, 226);
-   
+    border: 3px solid rgb(2, 109, 59);
+
 }

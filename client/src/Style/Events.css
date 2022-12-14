@@ -2,24 +2,24 @@
  
   display: flex;
   justify-content: space-around;
-  margin: 40px 50px 80px 50px;
+  margin: 40px 50px 40px 50px;
   background-color: rgb(204, 236, 224);
   border-radius: 40px;
-  -webkit-border-radius: 40px;
+  /* -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  -o-border-radius: 40px; */
   opacity: 90%;
 }
 .card-events .yawm-maftouh img {
   margin: 30px;
   width: 17vw;
   height: 33vh;
-  border-radius: 20%;
+  /* border-radius: 20%;
   -webkit-border-radius: 20%;
   -moz-border-radius: 20%;
   -ms-border-radius: 20%;
-  -o-border-radius: 20%;
+  -o-border-radius: 20%; */
 }
 .card-events .yawm-maftouh img {
   --g: 4px;     /* the gap */
@@ -67,13 +67,13 @@
 }
 .yawm-maftouh {
   margin: 50px 0 50px 50px;
-  border-radius: 20%;
+  /* border-radius: 20%; */
   display: flex;
   justify-content: space-around;
   padding: 10px;
   flex-wrap: wrap;
   /* border-style: dashed; */
-  width: 300vw;
+  width: 60%;
   height: 100%;
   box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
   -webkit-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);

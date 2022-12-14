@@ -1,12 +1,13 @@
-.main-container{
+.answer-container{
     height: 100%;
-    margin: 10px;
+    margin: 0 30px;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: right;
     margin-top: -180px;
-/* border-style: dashed; */
+    /* border-style: dashed; */
 }
 .comment-flexbox{
     display: flex;
@@ -19,11 +20,11 @@
     font-weight: 600;
     color: #084d31;
 }
-.inputs-box{
+.input-box{
     height: 65px;
-    width: 465px;
-    background-color: azure;
-    font-size: 18px;
+    width: 100%;
+    background-color: rgb(188, 254, 195);
+    font-size: 14px;
 }
 .comment-button{
    

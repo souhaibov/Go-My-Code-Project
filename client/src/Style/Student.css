@@ -3,46 +3,77 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 20px ;
+    margin: 10px 10px ;
 
 }
 .student{
-    background-color: rgb(192, 212, 196);
+    background: radial-gradient(ellipse at center top, 
+    rgb(45, 171, 45), 
+    rgb(148, 148, 208));
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     width: 27vw;
     height: 60vh;
-    margin: 30px 30px ;
+    margin: 20px 20px ;
     box-shadow: 0px -1px 25px 9px rgba(133, 211, 150, 0.75);
     -webkit-box-shadow: 0px -1px 5px 9px rgba(116,212,137,0.75);
     -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-        padding-top: 20px;
-    border-radius: 30%;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
+    padding-top: 50px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    /* border-style: dashed; */
+    
 }
-.st-description{
+/* .st-description{
     justify-content: center;
-}
+} */
 .student img{
-    border-radius: 30%;
-    width: 70%;
-    height: 90%;
-    margin: 20px;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10%;
+    width: 15vw;
+    height: 25vh;
+    margin: 10px;
+    /* border-style: dashed; */
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+
 }
-/* .zoom img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-} */
-/* .zoom :hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-} */
+ .student img {
+   
+    --c: #13140f; /* the border color */
+    --b: 5px;    /* the border thickness*/
+    --g: 0px;     /* the gap on hover */
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+ 
+ .student :hover img {
+	-webkit-transform:scale(1.5);
+	transform:scale(1.5);
+	--_i: 100%;
+	transition: .3s, background-size .3s .3s;
+	-moz-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	-o-transform:scale(1.5);
+    
+} 
+.st-description{
+    padding-top: 10px;
+}
+.student h2{
+font-weight: 600;
+}

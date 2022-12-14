@@ -88,7 +88,7 @@ const ContactUs = () => {
 <h4>chess.metouia@gmail.com</h4>
 <h4>souhaib.salem82@gmail.com</h4>
 <br/>
-<h4 style={{cursor:"pointer"}} onClick={() => window.location = 'mailto:yourmail@domain.com'}>Write me →</h4>
+<h4 className='write-me' onClick={() => window.location = 'mailto:yourmail@domain.com'}>Write me →</h4>
 
 </div>
 <div className="rectangle">
@@ -97,7 +97,7 @@ const ContactUs = () => {
 <h4>+216 55 547 212</h4>
 <h4>+216 29 704 109</h4>
 <br/>
-<a href="https://api.whatsapp.com/send?phone=+21628420108&text=Hello,%20more%20information!"><h4 style={{cursor:"pointer"}}>Write me →</h4></a>
+<a href="https://api.whatsapp.com/send?phone=+21628420108&text=Hello,%20more%20information!"><h4 className='write-me'>Write me →</h4></a>
   
 </div>
 <div className="rectangle">
@@ -105,7 +105,7 @@ const ContactUs = () => {
   <h3>Messenger</h3>
   <h4>chess metouia</h4>
   <br/>
-  <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F100004318984852"><h4 style={{cursor:"pointer"}}>Write me →</h4></a>
+  <a style={{text_decoration:"none"}} href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F100004318984852"><h4 className='write-me'>Write me →</h4></a>
   
 </div>
           </div>

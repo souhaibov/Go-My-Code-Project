@@ -27,7 +27,7 @@
    }
    .left_footer p:hover{
    
-    color: rgb(128, 230, 188);
+    color: rgb(5, 151, 56);
     
    }
    .footer p{
@@ -38,13 +38,26 @@
   width: 30%;
   opacity: 90%;
   /* border-style: double; */
-  background-color:#0b6a44;
+  background: linear-gradient(to right, 
+    
+  #507d07, 
+  
+   
+  #093706,
+  #507d07);
+  color:rgb(243, 247, 245);
 }
    .footer-basic {
     width: 70%;
     opacity: 80%;
     padding:20px 0;
-    background-color:#025b38;
+    background: linear-gradient(to right, 
+    
+    #507d07, 
+    
+     
+    #093706,
+    #507d07);
     color:rgb(243, 247, 245);
   }
   
@@ -61,12 +74,13 @@
   
   .footer-basic li {
     padding:10px 50px;
-    background-color: rgb(14, 115, 71);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    margin: 0 2px;
+    background-color: rgb(4, 74, 43);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
   
   .footer-basic ul a {

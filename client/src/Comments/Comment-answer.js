@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "./Comment.css";
+import "./Comment-answer.css";
 
-const Comment = () => {
+const CommentAnswer = () => {
   const user = useSelector((store) => store.user?.user);
 //   const isAuth = localStorage.getItem("token");
 
@@ -17,17 +17,18 @@ const Comment = () => {
   };
 
   return (
-    <div className="main-container">
+    <div className="answer-container">
       <div className="comment-flexbox">
-        <h3 className="comment-text">share your opinion</h3>
+        <h3 className="comment-text">Think well and take your time</h3>
         <textarea
+          placeholder="Put your answer here..."
           value={comment}
           onChange={onChangeHandler}
-          className="inputs-box"
+          className="input-box"
         />
 
         <button onClick={onClickHandler} className="comment-button">
-          Comment
+          Answer
         </button>
       </div>
      
@@ -41,4 +42,4 @@ const Comment = () => {
   );
 };
 
-export default Comment;
+export default CommentAnswer;
