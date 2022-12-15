@@ -40,11 +40,11 @@
   /* border-style: double; */
   background: linear-gradient(to right, 
     
-  #507d07, 
-  
+  #568a02, 
+  #06621a,
    
-  #093706,
-  #507d07);
+  #06621a
+ );
   color:rgb(243, 247, 245);
 }
    .footer-basic {
@@ -53,11 +53,12 @@
     padding:20px 0;
     background: linear-gradient(to right, 
     
-    #507d07, 
+    #06621a, 
     
-     
-    #093706,
-    #507d07);
+    #06621a,
+    #06621a,
+    
+    #568a02);
     color:rgb(243, 247, 245);
   }
   

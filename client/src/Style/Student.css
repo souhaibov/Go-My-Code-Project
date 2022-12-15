@@ -19,7 +19,7 @@
     box-shadow: 0px -1px 25px 9px rgba(133, 211, 150, 0.75);
     -webkit-box-shadow: 0px -1px 5px 9px rgba(116,212,137,0.75);
     -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-    padding-top: 50px;
+    padding-top: 65px;
     border-radius: 10%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
@@ -62,18 +62,28 @@
   }
  
  .student :hover img {
-	-webkit-transform:scale(1.5);
-	transform:scale(1.5);
+	-webkit-transform:scale(1.7);
+	transform:scale(1.7);
 	--_i: 100%;
 	transition: .3s, background-size .3s .3s;
-	-moz-transform:scale(1.5);
-	-ms-transform:scale(1.5);
-	-o-transform:scale(1.5);
-    
+	-moz-transform:scale(1.7);
+	-ms-transform:scale(1.7);
+	-o-transform:scale(1.7);
 } 
 .st-description{
-    padding-top: 10px;
+    padding-top: 5px;
+    /* border-style: dotted; */
 }
 .student h2{
-font-weight: 600;
+    margin: auto;
+    line-height: 2.5rem;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Henny Penny", cursive;
+    letter-spacing: 0.0015em;
+	color: #010720;
+	text-shadow: 0 1px #37c84f, -1px 0 #c0cbff, -1px 2px #8da1ff,
+		-2px 3px #37c84f, -1px 1px #c0cbff, -3px 4px #37c84f,
+		-4px 5px #37c84f, -3px 3px #c0cbff, -5px 6px #37c84f,
+		-6px 7px #37c84f, -5px 5px #c0cbff, -7px 8px #37c84f;
 }

@@ -14,11 +14,10 @@ const Students = () => {
         <div className='student'>
           <div style={{ border_radius: "10%"}}>
             <img src={el?.Poster[0].url} alt={el.first_name}/></div>
-          <br/><br/>
+          <br/><br/><br/>
           <div className='st-description'>
-            <h2 style={{color: 'Black'}}>First Name: {el?.first_name}</h2>
-            <h2 style={{color: 'Black'}}>Last Name: {el?.last_name}</h2>
-            <h2 style={{color: 'green4'}}>Age: {el?.Age}</h2>
+            <h2 >{el?.first_name} {el?.last_name}</h2>
+            <h2 >{el?.Age} ans</h2>
         </div>
     </div>
       ))}
