@@ -11,7 +11,37 @@ const StudentDash = () => {
  </h2>
  {/* 🍫😈  𝔠𝓗ｅ𝓢𝔰 ｗ𝐈𝓼𝓓๏Ｍ  🎉👣 */}
  <br/>
-          <h2>Emmanuel Lasker : "When you see a good move, look for a better one!"</h2>
+ <svg width="100%" height="100%">
+  <defs>
+    <pattern
+      id="polka-dots"
+      x={0}
+      y={0}
+      width={100}
+      height={100}
+      patternUnits="userSpaceOnUse"
+    >
+     
+    </pattern>
+    <style
+      dangerouslySetInnerHTML={{
+        __html:
+          '\n     @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");\n   ',
+      }}
+    />
+  </defs>
+  <rect x={0} y={0} width="100%" height="100%" fill="url(#polka-dots)">
+    {" "}
+  </rect>
+  <text x="50%" y="30%" textAnchor="middle">
+  Emmanuel Lasker :
+  </text><br/>
+  <text x="50%" y="70%" textAnchor="middle">
+ "When you see a good move, look for a better one!"
+  </text>
+</svg>
+
+          {/* <h2>Emmanuel Lasker : "When you see a good move, look for a better one!"</h2> */}
         </div>
         {/* <h1>Weekly Quiz</h1> */}
         <div className='quiz_position'>

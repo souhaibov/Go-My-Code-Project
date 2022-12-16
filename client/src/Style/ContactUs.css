@@ -161,10 +161,11 @@ margin: 0 40%;
 
 .write-me{
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .write-me:hover{
    color: rgb(17, 17, 17);
+   text-decoration: underline;
    transform:scale(1.15);
    -webkit-transform:scale(1.15);
    -moz-transform:scale(1.15);

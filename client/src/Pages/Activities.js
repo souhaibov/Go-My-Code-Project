@@ -37,7 +37,7 @@ const Activities = () => {
                 <img key={i} src={tofa?.url} alt="" />
               ))}
               
-            </div>
+            </div><br/>
            <div className="zone-comment">
             <Comment />
             </div>

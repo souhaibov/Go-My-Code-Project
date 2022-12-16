@@ -9,7 +9,9 @@
 }
 
 .manager{
-   background-color: rgb(192, 243, 203);
+    background: radial-gradient(ellipse at center top, 
+    rgb(45, 171, 45), 
+    rgb(148, 148, 208));
    display: flex;
    flex-direction: column;
    width: 30vw;
@@ -32,9 +34,18 @@
     width: 25vw;
     height: 50vh;
     margin: 20px;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
+   
 }
- 
+.manager h2{
+    margin: auto;
+    line-height: 1.5rem;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Henny Penny", cursive;
+    letter-spacing: 0.0015em;
+	color: #093627;
+	text-shadow: 0 1px #90d39c, -1px 0 #c0cbff, -1px 2px #8da1ff,
+		-1px 2px #90d39c, -1px 1px #c0cbff, -1px 2px #90d39c,
+		-3px 4px #90d39c, -3px 3px #c0cbff, -3px 4px #90d39c,
+		-5px 6px #90d39c, -5px 5px #c0cbff, -5px 6px #90d39c;
+}

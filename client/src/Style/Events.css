@@ -3,13 +3,18 @@
   display: flex;
   justify-content: space-around;
   margin: 40px 50px 40px 50px;
-  background-color: rgb(204, 236, 224);
+  background: linear-gradient(to right, 
+    
+  #489032, 
+  
+  #a1cd82,  
+  #489032);
   border-radius: 40px;
   /* -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px; */
-  opacity: 90%;
+  opacity: 95%;
 }
 .card-events .yawm-maftouh img {
   margin: 30px;
@@ -60,10 +65,10 @@
   color: rgb(26, 27, 27);
   width: 40%;
   height: 100%;
-  text-shadow: 1px 1px #a9eaa9;
-  box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
--webkit-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
--moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+  text-shadow: 0.5px 0.5px #409940;
+  box-shadow: 0px -1px 25px 9px rgba(11, 11, 11, 0.75);
+-webkit-box-shadow: 0px -1px 25px 9px rgba(22, 24, 22, 0.75);
+-moz-box-shadow: 0px -1px 25px 9px rgba(17, 18, 17, 0.75);
 }
 .yawm-maftouh {
   margin: 50px 0 50px 50px;
@@ -75,9 +80,9 @@
   /* border-style: dashed; */
   width: 60%;
   height: 100%;
-  box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-  -webkit-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-  -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+  box-shadow: 0px -1px 25px 9px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 25px 9px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(9, 10, 9, 0.75);
   
 }
 .yawm-maftouh img {
@@ -97,8 +102,9 @@
 
 }
 .info-events p{
-  font-size: 20px;
+  font-size: 21px;
   line-height: 2rem;
+  text-shadow: 0.15px 0.15px #080808;
 }
 .info-events h2{
   font-size: 20px;

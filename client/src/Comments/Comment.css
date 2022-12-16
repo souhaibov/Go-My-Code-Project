@@ -22,7 +22,7 @@
 .inputs-box{
     height: 65px;
     width: 465px;
-    background-color: azure;
+    background-color: rgba(150, 226, 166, 0.75);
     font-size: 18px;
 }
 .comment-button{
@@ -46,11 +46,11 @@
    
 }
 
-.comment-container{
+.main-container .comment-container{
     /* border-style: dashed; */
     height: 100%;
     width: 465px;
-    background-color: azure;
+    background-color: rgba(150, 226, 166, 0.75);
     font-size: 18px;
     border-radius: 10px;
    margin: 10px 0;

@@ -8,21 +8,26 @@
 
 }
 .Activities{
-    background-color: rgb(204, 236, 224);
-    border-radius:35px ;
+    background: linear-gradient(to right, 
+    
+    #489032, 
+    
+    #a1cd82,  
+    #489032);  
+      border-radius:35px ;
     -webkit-border-radius:35px ;
     -moz-border-radius:35px ;
     -ms-border-radius:35px ;
     -o-border-radius:35px ;
-    opacity: 85%;
+    opacity: 90%;
     display: flex;
     flex-direction: column;
    width: 65vw;
    height: 100%;
    margin: 20px 20px ;
-   box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-   -webkit-box-shadow: 0px -1px 10px 9px rgba(116,212,137,0.75);
-   -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+   box-shadow: 0px -1px 25px 9px rgba(23, 24, 23, 0.75);
+   -webkit-box-shadow: 0px -1px 10px 9px rgba(12, 12, 12, 0.75);
+   -moz-box-shadow: 0px -1px 25px 9px rgba(12, 13, 13, 0.75);
  
 }
 .st-description{
@@ -69,13 +74,14 @@
     
 }
 .titles{
+    
     width: 70%;
     height: 20vh;
     justify-content: center;
     justify-items: center;
 padding: 10px;
-margin: 5px 15%;
-box-shadow: rgba(1, 12, 3, 0.35) 0px 5px 30px;
+margin: 5px 15% 20px 15%;
+box-shadow: rgba(242, 243, 242, 0.94) 0px 5px 30px;
 
 }
 
@@ -84,9 +90,9 @@ margin: 5px;
 }
 .zone-comment{
     padding-top: 200px;
-    box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
-    -webkit-box-shadow: 0px -1px 10px 9px rgba(116,212,137,0.75);
-    -moz-box-shadow: 0px -1px 25px 9px rgba(116,212,137,0.75);
+    box-shadow: 0px -1px 25px 9px rgba(13, 14, 14, 0.75);
+    -webkit-box-shadow: 0px -1px 10px 9px rgba(13, 14, 13, 0.75);
+    -moz-box-shadow: 0px -1px 25px 9px rgba(12, 13, 12, 0.75);
     border-radius:35px ;
     
     /* border-style: dashed; */

@@ -22,7 +22,7 @@
     width: 45%;
     height: 100%;
    
-    background-color: rgb(191, 236, 219);
+    background-color: rgb(152, 235, 203);
     margin: 20px 20px;
     border-radius:10% ;
     -webkit-border-radius:10% ;
@@ -48,7 +48,7 @@
     font-size: 18px;
     opacity: 80%;
     /*border-style: dotted;
-    */background-color: rgb(191, 236, 219);
+    */background-color: rgb(152, 235, 203);
     border-radius:10% ;
     -webkit-border-radius:10% ;
     -moz-border-radius:10% ;
@@ -64,3 +64,33 @@
     margin-left: 0;
    
 }
+
+
+
+svg text {
+    font-family: Lora;
+    letter-spacing: 1px;
+    stroke: #0b0e0c;
+    font-size: 40px;
+    font-weight: 700;
+    stroke-width: 2;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(180, 16%, 4%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }

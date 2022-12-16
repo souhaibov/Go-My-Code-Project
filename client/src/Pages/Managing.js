@@ -17,7 +17,7 @@ const Managing = () => {
           <div className='mn-description'>
             <h2 >Name: {el.name}</h2>
             <br />
-            <h2 style={{color: 'ForestGreen'}}>Post : {el.job}</h2>
+            <h2 >Post : {el.job}</h2>
         </div>
     </div>
       ))}

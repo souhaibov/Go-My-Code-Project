@@ -1,11 +1,10 @@
-
-import {useState } from 'react';
+import "./Chess.css"
+import { useState } from 'react';
 import {Chessboard} from 'react-chessboard'
 import {Chess} from 'chess.js'
               
-function Chess_vs_pc() {
-  
-  const [game, setGame] = useState(new Chess())
+function ChessVsPc() {
+  const [game, setGame] = useState(new Chess());
 //Let's perform a function on the game state 
  
 function safeGameMutate(modify){
@@ -49,7 +48,7 @@ function onDrop(source,target){
  return true;
 }
   return (
-    <div className="app">
+    <div className="chess_board">
       <Chessboard 
       position={game.fen()}
       onPieceDrop ={onDrop}
@@ -58,4 +57,4 @@ function onDrop(source,target){
   );
 }
 
-export default Chess_vs_pc;
+export default ChessVsPc;

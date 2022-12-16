@@ -31,10 +31,10 @@ const Footer = () => {
             </div> <br/>
             <ul className="list-inline">
                 <li className="list-inline-item"><a href="../">Home</a></li>
-                <li className="list-inline-item"><a href="../Activities">Services</a></li>
-                <li className="list-inline-item"><a href="../About">About</a></li>
-                <li className="list-inline-item"><a href="../ContactUs#">Terms</a></li>
-                <li className="list-inline-item"><a href="../Login">Privacy Policy</a></li>
+                <li className="list-inline-item"><a href="../Activities">Activities</a></li>
+                <li className="list-inline-item"><a href="../Events">Events</a></li>
+                <li className="list-inline-item"><a href="../About">About us</a></li>
+                <li className="list-inline-item"><a href="../ContactUs">Contact us</a></li>
             </ul>
             <br/>
             <p >© ℂ𝕠𝕡𝕪𝕣𝕚𝕘𝕙𝕥 𝟚𝟘𝟚𝟚 © ℂ𝕣𝕖𝕒𝕥𝕖𝕕 𝔹𝕪 𝕤𝕠𝕦𝕙@𝕚𝕓.𝕤𝕒𝕝𝕖𝕞𝟠𝟚@𝕘𝕞𝕒𝕚𝕝.𝕔𝕠𝕞 - 𝔸𝕝𝕝 ℝ𝕚𝕘𝕙𝕥𝕤 ℝ𝕖𝕤𝕖𝕣𝕧𝕖𝕕</p>
