@@ -30,6 +30,7 @@ import AdminRoute from "./route/AdminRoutes";
 import SwitchRoutes from "./route/SwitchRoutes";
 import StudentDash from "./Pages/StudentDash";
 import  ScrollUpButton from "react-scroll-up-button";
+import ForgotPassword from "./Pages/ForgotPassword";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -87,7 +88,7 @@ function App() {
            <Route element={<SwitchRoutes/>}>
                 <Route path="/switch" element={<Login/>} />
            </Route>
-
+          <Route path="/Forgot" element={<ForgotPassword/>} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>

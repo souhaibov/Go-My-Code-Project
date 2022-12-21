@@ -25,12 +25,12 @@
     background-color: rgb(93, 155, 132);
   } */
 .Navigation a {
-    color: rgb(187, 217, 204);
+    color: rgb(178, 245, 202);
     font: bold;
     font-size: 22px;
     text-decoration: none;
     position: relative;
-    text-shadow: 1px 1px #d9a7a7;
+    /* text-shadow: 1px 1px #d9a7a7; */
     padding: 5px 5px ;
     margin: 5px 5px;
     text-transform: capitalize;
@@ -39,10 +39,12 @@
 .Navigation ul li:hover {
     background-position: 0;
     transition: all 0.3s ease-in-out;
-   
-   -webkit-text-fill-color: rgb(6, 58, 32);
+    -webkit-text-fill-color: rgb(12, 12, 12);
     transition: all 0.3s ease-in-out;
-  
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 .Navigation ul li:hover::before{
     width: 100%;

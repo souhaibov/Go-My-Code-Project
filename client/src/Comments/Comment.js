@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+// import { Navigate } from "react-router";
 import "./Comment.css";
 
 const Comment = () => {
   const user = useSelector((store) => store.user?.user);
-//   const isAuth = localStorage.getItem("token");
+  // const isAuth = localStorage.getItem("token");
 
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
@@ -17,9 +18,11 @@ const Comment = () => {
   };
 
   return (
+    //  isAuth ?
     <div className="main-container">
       <div className="comment-flexbox">
         <h3 className="comment-text">share your opinion</h3>
+       
         <textarea
           value={comment}
           onChange={onChangeHandler}
@@ -38,6 +41,7 @@ const Comment = () => {
      ))}
     
     </div>
+    // :<Navigate to={"/Register"}/>
   );
 };
 

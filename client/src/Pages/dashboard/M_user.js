@@ -114,6 +114,7 @@ const M_user = ({ping,setPing}) => {
             <th>Last Name</th>
             <th>Image</th>
             <th>Phone number</th>
+            <th>Age</th>
             <th>Email</th>
             <th>Status</th>
             <th>Edit</th>

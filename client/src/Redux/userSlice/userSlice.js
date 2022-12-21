@@ -9,7 +9,8 @@ export const userRegister = createAsyncThunk("user/register",async (user) => {
     return await response.data;
     
     } catch (error) {
-        console.log(error)
+      alert("Error: make sure that you have entered all the informations correctly");
+      
     }
 });
 
@@ -22,7 +23,7 @@ export const userLogin  = createAsyncThunk("user/login",async (user) => {
     
     
     } catch (error) {
-        console.log(error)
+       alert("Error: incorrect login or password");
     }
 });
 

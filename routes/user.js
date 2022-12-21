@@ -19,7 +19,7 @@ router.post("/register",registerRules(),validation, async (req, res) => {
 
     const searchedUser = await User.findOne({ email });
     if (searchedUser) {
-      return res.status(400).send({ msg: "email already registered" });
+      return res.status(400).send({ alert: "email already registered" });
     }
 
     // hash the password (decrypter)

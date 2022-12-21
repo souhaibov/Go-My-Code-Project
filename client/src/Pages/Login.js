@@ -15,6 +15,7 @@ const Login = () => {
   return (
     <div className="login-card">
       <img src="logo.png" alt="logo" />
+      
       <br />
       <br />
       <h3>Email:</h3>
@@ -34,7 +35,7 @@ const Login = () => {
         onChange={(e) => setlogin({ ...login, password: e.target.value })}
       />
       <br />
-      <h5>Lost Your Password ?</h5>
+      <h5> <Link to={"/Forgot"} >Forgot Password ?</Link> </h5>
       <br />
       <br />
       <button

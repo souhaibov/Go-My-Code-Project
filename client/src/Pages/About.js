@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import ConfirmPasswordForm from "../Components/ConfirmPassword";
 // import Carousels from "../Components/Carousels";
 
 // import Comment from "../Comments/Comment";
@@ -39,7 +40,7 @@ const About = () => {
 </div>
 
 </div>
-    
+    {/* <ConfirmPasswordForm/> */}
     
     </div>
   );
