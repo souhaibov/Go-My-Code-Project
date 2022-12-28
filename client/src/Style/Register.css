@@ -17,6 +17,12 @@
     #A4BE7B);
 
 }
+.register-card p{
+    color: #ee2626;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-left: 32px;
+}
 .register-card img{
     height: 250px;
     width: 250px;   

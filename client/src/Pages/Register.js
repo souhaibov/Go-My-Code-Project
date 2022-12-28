@@ -13,6 +13,20 @@ const Register = () => {
     // 👇️ update input value
     inputRef.current.value = 'New value';
   }
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState(null);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError('*Passwords do not match');
+      return;
+    }
+
+    // Submit the form
+  }
 
   const [register, setRegister] = useState({
     first_name: "",
@@ -24,6 +38,7 @@ const Register = () => {
   const dispatch = useDispatch();
 
   return (
+    <form onSubmit={handleSubmit}>
     <div className="register-card">
       <img src="logo.png" alt="logo" />
       <br />
@@ -74,20 +89,37 @@ const Register = () => {
       />
       <br />
       <br />
+      <div className="confirm-password">
       <h3>Password* :</h3>
 
       <input
         type="password"
         ref={inputRef}
+        value={password}
         placeholder="Enter your password"
-        onChange={(e) => setRegister({ ...register, password: e.target.value })}
+        onChange={(e) =>{
+          setPassword(e.target.value) 
+         }
+        }
       />
       
       <br />
-
+      <h3>Confirm Password* :</h3>
+      <input
+        type="password"
+        ref={inputRef}
+        value={confirmPassword}
+        placeholder="Confirm your password"
+        onChange={(e) =>{
+          setConfirmPassword(e.target.value); 
+          setRegister({ ...register, password: e.target.value })}
+        }
+      />
+      {error && <p>{error}</p>}
+      </div>
       <br />
       <br />
-      <Link to="/login">
+      {/* <Link to="/login"> */}
         <button
           className="submit_signup"
           onClick={() => {
@@ -97,14 +129,15 @@ const Register = () => {
         >
           Register
         </button>
-      </Link>
+      {/* </Link> */}
       <br />
       <br />
       <Link to="/Login">
-        {" "}
+       
         <button className="submit_signin">Login</button>
       </Link>
     </div>
+    </form>
   );
 };
 
