@@ -9,7 +9,7 @@ password:{type:String ,required:true},
 Age:{type:Number },
 Poster:[{url:String}],
 Status:{type:String ,default:"user"},
-
+level:{type:String,default:"one"},
 
 })
 

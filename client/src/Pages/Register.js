@@ -20,7 +20,7 @@ const Register = () => {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (password !== confirmPassword) {
+    if (password !== confirmPassword ) {
       setError('*Passwords do not match');
       return;
     }
@@ -103,7 +103,7 @@ const Register = () => {
         }
       />
       
-      <br />
+      <br /><br />
       <h3>Confirm Password* :</h3>
       <input
         type="password"
@@ -119,7 +119,8 @@ const Register = () => {
       </div>
       <br />
       <br />
-      {/* <Link to="/login"> */}
+      {error?
+      <Link to="/login">
         <button
           className="submit_signup"
           onClick={() => {
@@ -129,7 +130,17 @@ const Register = () => {
         >
           Register
         </button>
-      {/* </Link> */}
+      </Link>
+      : <button
+      className="submit_signup"
+      onClick={() => {
+        dispatch(userRegister(register));handleClick();
+        
+      }}
+    >
+      Register
+    </button>
+      }
       <br />
       <br />
       <Link to="/Login">

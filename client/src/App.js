@@ -11,8 +11,7 @@ import { useEffect, useState } from "react";
 import Students from "./Pages/Students";
 import Instructors from "./Pages/Instructors";
 import DataInstructors from "./Components/DataInstructors";
-import Managing from "./Pages/Managing";
-import DataManage from "./Components/DataManaging";
+import DataManage from "./Components/DataManaging2022";
 import Register from "./Pages/Register";
 import {useDispatch} from "react-redux";
 import { getUser, userCurrent } from "./Redux/userSlice/userSlice";
@@ -28,9 +27,15 @@ import StudentsRoute from "./route/StudentsRoutes";
 import AdminRoute from "./route/AdminRoutes";
 // import { Switch } from "@material-ui/core";
 import SwitchRoutes from "./route/SwitchRoutes";
-import StudentDash from "./Pages/StudentDash";
+import StudentDash from "./Pages/StudentDash/StudentQuiz";
 import  ScrollUpButton from "react-scroll-up-button";
 import ForgotPassword from "./Pages/ForgotPassword";
+import Managing2012 from "./Pages/Managing/Managing2012";
+import Managing2018 from "./Pages/Managing/Managing2018";
+import Managing2020 from "./Pages/Managing/Managing2020";
+import Managing2022 from "./Pages/Managing/Managing2022";
+import StudentQuiz from "./Pages/StudentDash/StudentQuiz";
+import StudentYoutube from "./Pages/StudentDash/StudentYoutube";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -68,10 +73,19 @@ function App() {
             path="/Instructors"
             element={<Instructors DataInstructors={DataInstructors} />}
           />
-          <Route
-            path="/Managing"
-            element={<Managing DataManage={DataManage} />}
+         
+          <Route path="/Managing2012" element={<Managing2012 DataManage={DataManage} />}
           />
+           <Route path="/Managing2018" element={<Managing2018 DataManage={DataManage} />}
+          />
+           <Route path="/Managing2020" element={<Managing2020 DataManage={DataManage} />}
+          />
+          <Route path="/Managing2022" element={<Managing2022 DataManage={DataManage} />}
+          />
+
+          <Route path="/StudentQuiz" element={<StudentQuiz />} />
+          <Route path="/StudentYoutube" element={<StudentYoutube />} />
+
 
            <Route element={<AdminRoute/>}>
             <Route path="/Dashboard" element={<Dashboard ping={ping}/>}>
@@ -82,7 +96,8 @@ function App() {
            </Route>
 
            <Route element={<StudentsRoute/>}>
-            <Route path="/Pages/StudentDash" element={<StudentDash ping={ping}/>}>
+            <Route path="/Pages/StudentDash" 
+            element={<StudentDash ping={ping}/>}>
             </Route>
            </Route>
            <Route element={<SwitchRoutes/>}>

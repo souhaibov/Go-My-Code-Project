@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className='under-list'>
             <Link to='/Instructors'> <li>Coachs</li></Link>
             <Link to='/Students'><li>Students</li></Link>
-            <Link to='/Managing'> <li>Managing body</li></Link>
+            <Link to='/Managing2022'> <li>Managing body</li></Link>
           </ul>
         </div>
         <Link to='/ContactUs'><li>Contact us</li></Link>

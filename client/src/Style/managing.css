@@ -49,3 +49,36 @@
 		-3px 4px #90d39c, -3px 3px #c0cbff, -3px 4px #90d39c,
 		-5px 6px #90d39c, -5px 5px #c0cbff, -5px 6px #90d39c;
 }
+
+.managing-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    /* padding: 0 20px; */
+    /* border-style: double; */
+
+    background: linear-gradient(to right,         #06621a,         #7db229,      #06621a);
+    
+}
+  
+  .managing-navbar li {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    padding:10px 50px;
+    color: black;
+    /* border-style: double; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+
+}
+  
+  .managing-navbar li:hover {
+    color: rgb(178, 245, 202);
+  }
+
+

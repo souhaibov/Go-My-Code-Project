@@ -1,6 +1,7 @@
 .Navigation{
     z-index: 99999999999;
     width: 100%;
+    /* position: fixed; */
     background: linear-gradient(to right, 
     
     #7db229, 

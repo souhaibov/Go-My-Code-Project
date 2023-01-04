@@ -1,10 +1,17 @@
 import React from 'react'
-import DataManage from '../Components/DataManaging'
-import '../Style/managing.css'
+import { Link } from 'react-router-dom'
+import DataManage from '../../Components/DataManaging2022'
+import '../../Style/managing.css'
 
-const Managing = () => {
+const Managing2012 = () => {
   return (
   <div>
+    <ul class="managing-navbar">
+    <Link to='/Managing2012'><li>2012</li></Link>
+    <Link to='/Managing2018'><li>2018</li></Link>
+    <Link to='/Managing2020'><li>2020</li></Link>
+    <Link to='/Managing2022'><li>2022</li></Link>
+</ul>
      <br />
   <h1>Club Officials Season 2022</h1>
     <div className='card-manager'>
@@ -26,4 +33,4 @@ const Managing = () => {
   )
 }
 
-export default Managing
+export default Managing2012

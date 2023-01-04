@@ -19,6 +19,7 @@ const M_user = ({ping,setPing}) => {
     Age: "",
     Poster: [],
     Status: "",
+    level: "",
   });
 
   const dispatch = useDispatch();
@@ -73,7 +74,13 @@ const M_user = ({ping,setPing}) => {
                   setRegister({ ...register, password: e.target.value })
                 }
               />
-             
+             <input
+                type="string"
+                placeholder="Level"
+                onChange={(e) =>
+                  setRegister({ ...register, level: e.target.value })
+                }
+              />
              <AddFiles setUser={setRegister} user={register} />
 
               <input
@@ -117,6 +124,7 @@ const M_user = ({ping,setPing}) => {
             <th>Age</th>
             <th>Email</th>
             <th>Status</th>
+            <th>Level</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
