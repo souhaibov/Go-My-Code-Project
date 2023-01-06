@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import Students from "./Pages/Students";
 import Instructors from "./Pages/Instructors";
 import DataInstructors from "./Components/DataInstructors";
-import DataManage from "./Components/DataManaging2022";
+import DataManage from "./Components/DataManaging2020";
 import Register from "./Pages/Register";
 import {useDispatch} from "react-redux";
 import { getUser, userCurrent } from "./Redux/userSlice/userSlice";
@@ -31,7 +31,8 @@ import StudentDash from "./Pages/StudentDash/StudentQuiz";
 import  ScrollUpButton from "react-scroll-up-button";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Managing2012 from "./Pages/Managing/Managing2012";
-import Managing2018 from "./Pages/Managing/Managing2018";
+import Managing2017 from "./Pages/Managing/Managing2017";
+import Managing2019 from "./Pages/Managing/Managing2019";
 import Managing2020 from "./Pages/Managing/Managing2020";
 import Managing2022 from "./Pages/Managing/Managing2022";
 import StudentQuiz from "./Pages/StudentDash/StudentQuiz";
@@ -74,14 +75,11 @@ function App() {
             element={<Instructors DataInstructors={DataInstructors} />}
           />
          
-          <Route path="/Managing2012" element={<Managing2012 DataManage={DataManage} />}
-          />
-           <Route path="/Managing2018" element={<Managing2018 DataManage={DataManage} />}
-          />
-           <Route path="/Managing2020" element={<Managing2020 DataManage={DataManage} />}
-          />
-          <Route path="/Managing2022" element={<Managing2022 DataManage={DataManage} />}
-          />
+          <Route path="/Managing2012" element={<Managing2012 DataManage={DataManage} />}/>
+           <Route path="/Managing2017" element={<Managing2017 DataManage={DataManage} />}/>
+           <Route path="/Managing2019" element={<Managing2019 DataManage={DataManage} />}/>
+          <Route path="/Managing2020" element={<Managing2020 DataManage={DataManage} />}/>
+          <Route path="/Managing2022" element={<Managing2022 DataManage={DataManage} />}/>
 
           <Route path="/StudentQuiz" element={<StudentQuiz />} />
           <Route path="/StudentYoutube" element={<StudentYoutube />} />

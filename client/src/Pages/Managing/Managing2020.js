@@ -8,7 +8,8 @@ const Managing2012 = () => {
   <div>
     <ul class="managing-navbar">
     <Link to='/Managing2012'><li>2012</li></Link>
-    <Link to='/Managing2018'><li>2018</li></Link>
+    <Link to='/Managing2017'><li>2017</li></Link>
+    <Link to='/Managing2019'><li>2019</li></Link>
     <Link to='/Managing2020'><li>2020</li></Link>
     <Link to='/Managing2022'><li>2022</li></Link>
 </ul>

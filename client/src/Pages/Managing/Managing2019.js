@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import DataManage from '../../Components/DataManaging2018'
+import DataManage from '../../Components/DataManaging2019'
 import '../../Style/managing.css'
 
 const Managing2012 = () => {
@@ -8,12 +8,13 @@ const Managing2012 = () => {
   <div>
     <ul class="managing-navbar">
     <Link to='/Managing2012'><li>2012</li></Link>
-    <Link to='/Managing2018'><li>2018</li></Link>
+    <Link to='/Managing2017'><li>2017</li></Link>
+    <Link to='/Managing2019'><li>2019</li></Link>
     <Link to='/Managing2020'><li>2020</li></Link>
     <Link to='/Managing2022'><li>2022</li></Link>
 </ul>
      <br />
-  <h1>Club Officials Season 2018</h1>
+  <h1>Club Officials Season 2019</h1>
     <div className='card-manager'>
       
       

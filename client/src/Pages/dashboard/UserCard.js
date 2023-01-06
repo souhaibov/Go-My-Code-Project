@@ -34,7 +34,7 @@ const UserCard = ({ el , ping , setPing }) => {
         <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Status} name="Status" />
       </td>
       <td>
-        <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.level} name="Level" />
+        <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.level} name="level" />
       </td>
       <td onClick={() => {dispatch(updateUser({ id: el?._id, user: user }));setShow(false);setPing(!ping)}}>
         <button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button>

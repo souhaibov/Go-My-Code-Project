@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import DataManage from '../../Components/DataManaging2012'
+import DataManage from '../../Components/DataManaging2017'
 import '../../Style/managing.css'
 
 const Managing2012 = () => {
@@ -14,7 +14,7 @@ const Managing2012 = () => {
     <Link to='/Managing2022'><li>2022</li></Link>
 </ul>
      <br />
-  <h1>Club Officials Season 2012</h1>
+  <h1>Club Officials Season 2017</h1>
     <div className='card-manager'>
       
       
