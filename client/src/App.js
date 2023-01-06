@@ -37,6 +37,10 @@ import Managing2020 from "./Pages/Managing/Managing2020";
 import Managing2022 from "./Pages/Managing/Managing2022";
 import StudentQuiz from "./Pages/StudentDash/StudentQuiz";
 import StudentYoutube from "./Pages/StudentDash/StudentYoutube";
+import StudentsLevel1 from "./Pages/Student/StudentsLevel1";
+import StudentsLevel2 from "./Pages/Student/StudentsLevel2";
+import StudentsLevel3 from "./Pages/Student/StudentsLevel3";
+import StudentsLevel4 from "./Pages/Student/StudentsLevel4";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -70,6 +74,16 @@ function App() {
               <Students/>
             }
           />
+
+            <Route path="/Students" element={<Students/>}>
+                 <Route path="/Students/StudentsLevel1" element={<StudentsLevel1/>} />
+                 <Route path="/Students/StudentsLevel2" element={<StudentsLevel2/>} />
+                 <Route path="/Students/StudentsLevel3" element={<StudentsLevel3/>} />
+                 <Route path="/Students/StudentsLevel4" element={<StudentsLevel4/>} />
+            </Route>
+
+
+
           <Route
             path="/Instructors"
             element={<Instructors DataInstructors={DataInstructors} />}
