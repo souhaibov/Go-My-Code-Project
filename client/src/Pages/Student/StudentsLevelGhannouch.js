@@ -5,7 +5,7 @@ import '../../Style/Student.css'
 const Students = () => {
   const users = useSelector((store) => store.user?.users);
   console.log(users)
-  const Student = users.filter((e) => e.Status === 'Student' && e.level==="four");
+  const Student = users.filter((e) => e.Status === 'Student' && e.level==="ghannouch");
 
   return (
     <div>

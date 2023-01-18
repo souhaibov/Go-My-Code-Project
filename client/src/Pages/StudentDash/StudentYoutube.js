@@ -7,7 +7,7 @@ const StudentYoutube = () => {
     <div>
       <ul class="Student-navbar">
         <Link to="/StudentQuiz">
-          <li>Weakly Quiz</li>
+          <li>Weekly Quiz</li>
         </Link>
         <Link to="/StudentYoutube">
           <li>Youtube Links</li>

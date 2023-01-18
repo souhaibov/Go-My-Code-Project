@@ -110,3 +110,34 @@
   font-size: 20px;
   line-height: 2.5rem;
 }
+
+.events-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  /* padding: 0 20px; */
+  /* border-style: double; */
+
+  background: linear-gradient(to right,         #06621a,         #7db229,      #06621a);
+  
+}
+
+.events-navbar li {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  padding:10px 50px;
+  color: black;
+  /* border-style: double; */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+
+}
+
+.events-navbar li:hover {
+  color: rgb(178, 245, 202);
+}

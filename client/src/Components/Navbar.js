@@ -13,7 +13,7 @@ const Navbar = () => {
 
         <Link to='/'><li>Home</li></Link>
         <Link to='/Activities'><li>Activities</li></Link>
-        <Link to='/Events'><li>Events</li></Link>
+        <Link to='/Events2022'><li>Events</li></Link>
         <div className='under-container'><Link to='/About'><li>About</li></Link>
           <ul className='under-list'>
             <Link to='/Instructors'> <li>Coachs</li></Link>

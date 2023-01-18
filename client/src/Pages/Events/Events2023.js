@@ -1,26 +1,30 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Comment from "../Comments/Comment";
+import Comment from "../../Comments/Comment";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
 
-import "../Style/Events.css";
+import "../../Style/Events.css";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   const events = useSelector((store) => store.event?.Event?.event);
-
+  const events2023 = events.filter((e) => e.Date.includes(2023));
   return (
     <div>
+         <ul class="events-navbar">
+    <Link to='/Events2021'><li>2021</li></Link>
+    <Link to='/Events2022'><li>2022</li></Link>
+    <Link to='/Events2023'><li>2023</li></Link>
+        </ul>
       <br />
 
-      {events?.map((el, i) => (
+      {events2023?.map((el, i) => (
         <div className="card-events">
           <br />
           <div className="yawm-maftouh">

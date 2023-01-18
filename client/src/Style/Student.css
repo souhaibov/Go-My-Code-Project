@@ -16,7 +16,7 @@
     flex-direction: column;
     width: 40%;
     height: 60vh;
-    margin: 20px 40px ;
+    margin: 10px 40px ;
     border-radius:10% ;
   
     /* border-style: dashed; */
@@ -133,7 +133,7 @@
     text-shadow: 0px 1px rgb(247, 249, 247);
 }
 .students_left h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 10px 0 10px 50px;
     color: #010720;
@@ -147,16 +147,25 @@
 }
 .students_left h1{
     font-size: 26px;
+    
     margin: 30px 0;
 }
 .students_left li{
-    font-weight: 500;
-    color:rgb(13, 13, 13);
-   
+    font-size: 22px;
+    text-shadow: none;
+    font-weight: 400;
+    color:rgb(178, 245, 202);   text-decoration: none;
  }
 .students_left li:hover{
-   font-weight: 300;
-   color:rgb(178, 245, 202);
-   font-size:36px ;
+   font-weight: 400;
+   color:rgb(8, 8, 8);
+   
+}
+
+.students_word p{
+    font-size: 32px;
+    font-weight: 700;
+    
+    color: #010720;
 }
 

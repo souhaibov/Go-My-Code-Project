@@ -85,10 +85,11 @@ const ContactUs = () => {
  
 <img src="mail.png" alt="mail" />
 <h3>Email</h3>
+
+<h4>contact@chess-metouia.tn</h4>
 <h4>chess.metouia@gmail.com</h4>
-<h4>souhaib.salem82@gmail.com</h4>
 <br/>
-<h4 className='write-me' onClick={() => window.location = 'mailto:yourmail@domain.com'}>Write me →</h4>
+<h4 className='write-me' onClick={() => window.location = 'mailto:contact@chess-metouia.tn'}>Write me →</h4>
 
 </div>
 <div className="rectangle">

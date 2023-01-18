@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='left_footer'>
       
         <h2>Keep in touch</h2><br/>
-        <p style={{text_decoration: 'none'}} onClick={() => window.location = 'mailto:Chess.metouia@gmail.com'}>Chess.metouia@gmail.com</p>
+        <p style={{text_decoration: 'none'}} onClick={() => window.location = 'mailto:contact@chess-metouia.tn'}>contact@chess-metouia.tn</p>
         <br/>
         <a href="https://api.whatsapp.com/send?phone=+21628420108&text=Hello,%20more%20information!"><p>Phone number: +216 55 547 212</p><p style={{margin:"5px auto auto 122px"}} > +216 29 704 109</p></a>
         

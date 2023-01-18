@@ -3,7 +3,11 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Events from "./Pages/Events";
+
+import Events2021 from "./Pages/Events/Events2021";
+import Events2022 from "./Pages/Events/Events2022";
+import Events2023 from "./Pages/Events/Events2023";
+
 import ContactUs from "./Pages/ContactUs";
 import About from "./Pages/About";
 import Login from "./Pages/Login";
@@ -41,6 +45,8 @@ import StudentsLevel1 from "./Pages/Student/StudentsLevel1";
 import StudentsLevel2 from "./Pages/Student/StudentsLevel2";
 import StudentsLevel3 from "./Pages/Student/StudentsLevel3";
 import StudentsLevel4 from "./Pages/Student/StudentsLevel4";
+import StudentsLevelMaya from "./Pages/Student/StudentsLevelMaya";
+import StudentsLevelGhannouch from "./Pages/Student/StudentsLevelGhannouch";
 
 function App() {
   const [ping, setPing] = useState(false)
@@ -64,7 +70,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Activities" element={<Activities />} />
-          <Route path="/Events" element={<Events />} />
+
+          <Route path="/Events2022" element={<Events2022 />} />
+          <Route path="/Events2021" element={<Events2021 />} />
+          <Route path="/Events2023" element={<Events2023 />} />
+
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/About" element={<About />} />
           <Route path="/StudentDash" element={<StudentDash />} />
@@ -80,6 +90,8 @@ function App() {
                  <Route path="/Students/StudentsLevel2" element={<StudentsLevel2/>} />
                  <Route path="/Students/StudentsLevel3" element={<StudentsLevel3/>} />
                  <Route path="/Students/StudentsLevel4" element={<StudentsLevel4/>} />
+                 <Route path="/Students/StudentsLevelMaya" element={<StudentsLevelMaya/>} />
+                 <Route path="/Students/StudentsLevelGhannouch" element={<StudentsLevelGhannouch/>} />
             </Route>
 
 
