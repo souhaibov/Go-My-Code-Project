@@ -43,7 +43,7 @@ const Students = ({ping}) => {
             <Link to="/Students/StudentsLevelGhannouch">
               <li> ♘ Mixed group ♘</li>
             </Link>
-            <h2>➯Number of Players = 10</h2>
+            <h2>➯Number of Players = 13</h2>
 
           </ul>
         </div>

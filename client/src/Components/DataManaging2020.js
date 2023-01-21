@@ -7,7 +7,7 @@ const DataManage=[
     
     { id:5 ,name:'Souhaib Salem',job:'Treasurer Helper',photo:'me.jpg'},
    
-    { id:7 ,name:'Ahmed Hemdani',job:'Member responsible for youth',photo:'person_logo.jpg'},
+    { id:7 ,name:'Abdeljabbar Abdelkader',job:'Member responsible for youth',photo:'person_logo.jpg'},
    
 ]
 export default DataManage;

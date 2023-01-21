@@ -4,7 +4,9 @@ import '../../Style/Student.css'
 
 const Students = () => {
   const users = useSelector((store) => store.user?.users);
-  console.log(users)
+  let date1=new Date();
+  let annee=date1.getFullYear();
+  
   const Student = users.filter((e) => e.Status === 'Student' && e.level==="three");
 
   return (
@@ -17,7 +19,7 @@ const Students = () => {
           <br/><br/><br/>
           <div className='st-description'>
             <h2 >{el?.first_name} {el?.last_name}</h2>
-            <h2 >{el?.Age} ans</h2>
+            <h2 >{annee - el?.birthday} ans</h2>
         </div>
     </div>
       ))}

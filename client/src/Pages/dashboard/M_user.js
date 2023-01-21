@@ -16,7 +16,7 @@ const M_user = ({ping,setPing}) => {
     phone_number: "",
     email: "",
     password: "",
-    Age: "",
+    birthday:"",
     Poster: [],
     Status: "",
     level: "",
@@ -93,12 +93,14 @@ const M_user = ({ping,setPing}) => {
                   setRegister({ ...register, Status: e.target.value })
                 }
               />
+              
               <input
-                type="number"
-                placeholder="Age"
-                min={4}
+               
+                type="Number"
+                placeholder="Birthday"
+                min={1940}
                 onChange={(e) =>
-                  setRegister({ ...register, Age: e.target.value })
+                  setRegister({ ...register, birthday: e.target.value })
                 }
               />
             </div>
@@ -123,7 +125,8 @@ const M_user = ({ping,setPing}) => {
             <th>Last Name</th>
             <th>Image</th>
             <th>Phone number</th>
-            <th>Age</th>
+           
+            <th>Birthday</th>
             <th>Email</th>
             <th>Status</th>
             <th>Level</th>

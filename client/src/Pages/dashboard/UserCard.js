@@ -16,7 +16,7 @@ const UserCard = ({ el , ping , setPing }) => {
         <input style={{height:"35px",width:"140px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.first_name} name="first_name" />
       </td>
       <td>
-        <input style={{height:"35px",width:"140px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.last_name} name="last_name" />
+        <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.last_name} name="last_name" />
       </td>
       <td>
         <input style={{height:"35px",width:"130px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Poster} name="tof" />
@@ -25,16 +25,16 @@ const UserCard = ({ el , ping , setPing }) => {
         <input style={{height:"35px",width:"130px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="number" maxLength="14" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" defaultValue={el?.phone_number}/>
       </td>
       <td>
-        <input style={{height:"35px",width:"50px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="number" defaultValue={el?.Age} name="Age" />
+        <input style={{height:"35px",width:"60px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="number" defaultValue={el?.birthday} name="birthday" />
       </td>
       <td>
-        <input style={{height:"35px",width:"200px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.email} name="email" />
+        <input style={{height:"35px",width:"250px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.email} name="email" />
       </td>
       <td>
-        <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Status} name="Status" />
+        <input style={{height:"35px",width:"80px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.Status} name="Status" />
       </td>
       <td>
-        <input style={{height:"35px",width:"100px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.level} name="level" />
+        <input style={{height:"35px",width:"60px",fontSize:"16px",textAlign:"center",backgroundColor:"rgb(100, 199, 146)"}} onChange={handleChange} type="text" defaultValue={el?.level} name="level" />
       </td>
       <td onClick={() => {dispatch(updateUser({ id: el?._id, user: user }));setShow(false);setPing(!ping)}}>
         <button style={{width:"70px",height:"30px",fontSize:"16px",backgroundColor:"rgb(20, 159, 146)"}}>update</button>
@@ -47,7 +47,7 @@ const UserCard = ({ el , ping , setPing }) => {
       <td>{el?.last_name}</td>
       <td>{el?.Poster?.map((tofa,i)=><img key={i} style={{width:"60px", height:"60px"}} src={tofa?.url} alt='' />)}</td>
       <td>{el?.phone_number}</td>
-      <td>{el?.Age}</td>
+      <td>{el?.birthday}</td>
       <td>{el?.email}</td>
       <td>{el?.Status}</td>
       <td>{el?.level}</td>
