@@ -16,7 +16,11 @@ const Footer = () => {
         <p style={{text_decoration: 'none'}} onClick={() => window.location = 'mailto:contact@chess-metouia.tn'}>contact@chess-metouia.tn</p>
         <br/>
         <a href="https://api.whatsapp.com/send?phone=+21628420108&text=Hello,%20more%20information!"><p>Phone number: +216 55 547 212</p><p style={{margin:"5px auto auto 122px"}} > +216 29 704 109</p></a>
-        
+        <br/>
+        <a href='carte identité du CEM.pdf' download='carte identité du CEM.pdf'>
+                 <p style={{text_decoration: 'none'}}>ATB-RIB: 01087119111200207367</p>
+         </a>
+
         
       </div>
     <div className="footer-basic">

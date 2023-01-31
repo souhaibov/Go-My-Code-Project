@@ -21,11 +21,11 @@ const Students = ({ping}) => {
               {" "}
               <li> ♙ Group Level 1 ♙</li>{" "}
             </Link>
-            <h2>➯Number of Players = 12</h2>
+            <h2>➯Number of Players = 16</h2>
             <Link to="/Students/StudentsLevel2">
               <li> ♝ Group Level 2 ♝</li>
             </Link>
-            <h2>➯Number of Players = 12</h2>
+            <h2>➯Number of Players = 14</h2>
             <Link to="/Students/StudentsLevel3">
               <li> ♝ Group Level 3 ♝</li> 
             </Link>
@@ -38,7 +38,7 @@ const Students = ({ping}) => {
             <Link to="/Students/StudentsLevelMaya">
               <li> ♘ Mixed group ♘</li>
             </Link>
-            <h2>➯Number of Players = 10</h2>
+            <h2>➯Number of Players = 14</h2>
             <h1>- Ghannouch groups -</h1>
             <Link to="/Students/StudentsLevelGhannouch">
               <li> ♘ Mixed group ♘</li>

@@ -1,40 +1,102 @@
 
   .description_club{
+    
     margin: 70px 0;
 font-size: 26px;
 width: 100%;
 display: flex;
 justify-content: space-around;
-
+/* border-style: dashed; */
   }
-.description_ar, .description_fr, .description_en{
-    /*border-style: dashed;
-    */
+.description_fr{
+    /* border-style: dashed; */
     border-radius: 4%;
     /* padding: 80px 80px; */
-    opacity: 85%;
-    color: rgb(19, 87, 70);
+   
+    color: rgb(12, 12, 12);
     text-align: justify;
     text-justify: inter-word;
     padding: 20px;
-    text-shadow: black 0.045em 0.025em 0.025em;
-    line-height: 50px;
+    text-shadow: black 0.035em 0.015em 0.015em;
+    box-shadow: 0px -1px 25px 9px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 25px 9px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(9, 10, 9, 0.75);
+   margin-bottom: 40px;
+    line-height: 70px;
     width: 90%;
     background: linear-gradient(to right, 
     
-    #489032, 
-    #a3f696,
-    #b5e16d, 
-    #a3f696, 
-    #489032); 
-    /* background: linear-gradient(to right, 
-    
-    #489032, 
-    
-    #a1cd82,  
-    #489032);   */
+  #489032, 
+  
+  #a1cd82,  
+  #489032);
 }
+/* .description_fr :hover{
+  color: rgb(230, 244, 238);
+} */
+.description_button{
+  
+  margin: 20px 16%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: radial-gradient(rgb(174, 255, 0), LightSkyBlue);
+  width: 30vw;
+  height: 60px;
+  color: rgb(5, 44, 78);
+  border-radius: 30%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 30%;
+  -ms-border-radius: 30%;
+  -o-border-radius: 30%;
+  box-shadow: 0px -1px 25px 9px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 25px 9px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(9, 10, 9, 0.75);
+  
 
+}
+.description_button:hover {
+  /* transition: 0.5s ease-in-out; */
+  background: radial-gradient(LightSkyBlue, rgb(174, 255, 0));
+color: rgb(49, 55, 61);
+}
+.description-club1{
+  width:50vw;
+  /* border-style: dotted; */
+  margin:0 25%;
+  padding:20px 40px 30px 40px;
+  box-shadow: 0px -1px 25px 9px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 25px 9px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(9, 10, 9, 0.75);
+   margin-bottom: 50px;
+   margin-top: 60px;
+}
+/* .description-club1 p:hover{
+color: antiquewhite;
+} */
+.description-club1 p{
+ 
+ 
+  color: rgb(12, 12, 12);
+ 
+  
+  padding: 15px 20px;
+ 
+ 
+/* border-style: double; */
+}
+.description-club1 .titre{
+  font-size: 34px;
+  text-align: center;
+  padding:2px ;
+  margin: 5px 20%;
+  color: #030359;
+  width: 25vw;
+  /* border-style: dashed; */
+  box-shadow: 0px -1px 25px 5px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 5px 2px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 2px 2px rgba(9, 10, 9, 0.75);
+}
 .langages{
   
     box-shadow: 0px 1px 5px 19px rgba(19,115,52,0.27);
@@ -61,15 +123,15 @@ justify-content: space-around;
     -moz-border-radius: 30%;
     -ms-border-radius: 30%;
     -o-border-radius: 30%;
+    box-shadow: 0px -1px 25px 9px rgba(12, 14, 13, 0.75);
+  -webkit-box-shadow: 0px -1px 10px 7px rgba(11, 13, 12, 0.75);
+  -moz-box-shadow: 0px -1px 25px 9px rgba(9, 10, 9, 0.75);
 }
 .langages p:hover{
   background-color:rgba(19,115,52,0.27);
 
 }
-/* .langages p:focus-within{
-  background-color:rgba(19,115,52,0.27);
 
-} */
 .description_club h3{
     color: rgb(8, 65, 46);
     text-align: center;

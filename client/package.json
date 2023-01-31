@@ -1,6 +1,7 @@
 {
   "name": "chessmetouia",
   "version": "0.1.0",
+  "homepage": "http://chess-metouia.tn",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
